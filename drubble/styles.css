@@ -9,6 +9,13 @@
   margin: 50px auto;
 }
 
+h {
+  display: block;
+  width: 400px;
+  margin: 50px auto;
+  font: 50px Monaco;
+}
+
 p {
   display: block;
   width: 400px;
