@@ -11,14 +11,21 @@
 
 h {
   display: block;
-  width: 400px;
+  width: 80%;
   margin: 50px auto;
   font: 50px Monaco;
 }
 
 p {
   display: block;
-  width: 400px;
+  width: 80%;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
