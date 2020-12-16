@@ -1,0 +1,170 @@
+
+<!doctype html>
+
+
+<html >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Translational Spring &#8212; momdyn 1.3.0 documentation</title>
+    <style>
+        :root {
+            --mdc-theme-primary: #6200ee;
+            --mdc-theme-secondary: #018786;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../_static/bundle.css" type="text/css"/>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
+    <script type="text/javascript" id="documentation_options" data-url_root="../"
+            src="../_static/documentation_options.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../_static/bundle.js" async></script>
+    <script src="../_static/underscore.js" async></script>
+    <script src="../_static/doctools.js" async></script>
+    <script src="../_static/language_data.js" async></script>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="index" title="Index" href="../genindex.html"/>
+            <link rel="search" title="Search" href="../search.html"/>
+            <link rel="next" title="Rotational Spring" href="rotational_spring.html"/>
+            <link rel="prev" title="Actuated Moment" href="actuated_moment.html"/> 
+</head>
+<body class="mdc-typography scroll">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                <span class="mdc-top-app-bar__title"><a href="../index.html"
+                                                        class="nostylea title">momdyn 1.3.0 documentation</a></span>
+            </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="navigation">
+                    <a href="../search.html" class="material-icons mdc-top-app-bar__action-item"
+                       aria-label="Search" title="Search">search</a>
+                </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title"><a class="nostylea" href="../index.html">momdyn 1.3.0 documentation</a></h3>
+        </div>
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <h6 class="mdc-list-group__subheader">Contents</h6>
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../mechanism.html">Mechanism Module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mechanism.html#id1">Classic Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanism.html#id2">Joints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanism.html#id3">Bodies</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../mechanism.html#id4">Loads</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+</ul>
+
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Navigation</h6>
+                
+                    <a href="rotational_spring.html" title="Rotational Spring" class="reference">Next</a><br/>
+                
+                
+                    <a href="actuated_moment.html" title="Actuated Moment" class="reference">Previous</a><br/>
+                
+                
+                    <a href="../_sources/loads/translational_spring.rst.txt" rel="nofollow" class="reference"
+                       title="Go to page source">Page source</a><br/>
+                
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Options</h6>
+                <div class="mdc-switch">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__thumb-underlay">
+                        <div class="mdc-switch__thumb">
+                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                        </div>
+                    </div>
+                </div>
+                <label for="basic-switch" style="padding-left: 16px; cursor: pointer;">Dark theme</label>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content">
+        <main class="main-content" id="main-content">
+                <div class="documentwrapper">
+                        <div class="bodywrapper">
+                    <div class="body" role="main">
+                        
+  <div class="section" id="translational-spring">
+<h1>Translational Spring<a class="headerlink" href="#translational-spring" title="Permalink to this headline">¶</a></h1>
+<p>A translational spring/damper induces an attractive force between two points that is colinear with a vector drawn from the start to end point. The force magnitude is</p>
+<blockquote>
+<div><p>F = k (x - e) + c x’</p>
+</div></blockquote>
+<p>where k is the spring stiffness, x is the distance between the two points, e is an equilibrium length of the spring, c is the damping constant, and x’ is the differential speed between the two points.</p>
+<p><strong>Keyword Arguments</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">param start_point</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Key for the first point.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param end_point</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Key for the second point.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param k</dt>
+<dd class="field-odd"><p>string or numeric</p>
+</dd>
+</dl>
+<p>Parameter corresponding to the spring stiffness constant.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param c</dt>
+<dd class="field-odd"><p>string or numeric</p>
+</dd>
+</dl>
+<p>Parameter corresponding to the damping constant.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param equilibrium</dt>
+<dd class="field-odd"><p>string or numeric</p>
+</dd>
+</dl>
+<p>Parameter corresponding to the equilibrium length of the spring.</p>
+<dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Message describing the created spring</p>
+</div>
+
+
+                    </div>
+                    <div class="footer">
+                        <hr/>
+                        
+                            &copy;2020, Eliott Radcliffe.<br/>
+                            Powered by <a href="https://www.sphinx-doc.org/">Sphinx 3.3.1</a> &amp;
+                            <a href="https://github.com/m-alzam/sphinx_theme_material">
+                                Material theme 1.1.2
+                            </a>
+                        
+                    </div>
+                        </div>
+                </div>
+        </main>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+
+<!doctype html>
+
+
+<html >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Cylindrical &#8212; momdyn 1.3.0 documentation</title>
+    <style>
+        :root {
+            --mdc-theme-primary: #6200ee;
+            --mdc-theme-secondary: #018786;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../_static/bundle.css" type="text/css"/>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
+    <script type="text/javascript" id="documentation_options" data-url_root="../"
+            src="../_static/documentation_options.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../_static/bundle.js" async></script>
+    <script src="../_static/underscore.js" async></script>
+    <script src="../_static/doctools.js" async></script>
+    <script src="../_static/language_data.js" async></script>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="index" title="Index" href="../genindex.html"/>
+            <link rel="search" title="Search" href="../search.html"/>
+            <link rel="next" title="Universal" href="universal.html"/>
+            <link rel="prev" title="Revolute" href="revolute.html"/> 
+</head>
+<body class="mdc-typography scroll">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                <span class="mdc-top-app-bar__title"><a href="../index.html"
+                                                        class="nostylea title">momdyn 1.3.0 documentation</a></span>
+            </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="navigation">
+                    <a href="../search.html" class="material-icons mdc-top-app-bar__action-item"
+                       aria-label="Search" title="Search">search</a>
+                </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title"><a class="nostylea" href="../index.html">momdyn 1.3.0 documentation</a></h3>
+        </div>
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <h6 class="mdc-list-group__subheader">Contents</h6>
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../mechanism.html">Mechanism Module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mechanism.html#id1">Classic Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanism.html#id2">Joints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanism.html#id3">Bodies</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../mechanism.html#id4">Loads</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+</ul>
+
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Navigation</h6>
+                
+                    <a href="universal.html" title="Universal" class="reference">Next</a><br/>
+                
+                
+                    <a href="revolute.html" title="Revolute" class="reference">Previous</a><br/>
+                
+                
+                    <a href="../_sources/joints/cylindrical.rst.txt" rel="nofollow" class="reference"
+                       title="Go to page source">Page source</a><br/>
+                
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Options</h6>
+                <div class="mdc-switch">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__thumb-underlay">
+                        <div class="mdc-switch__thumb">
+                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                        </div>
+                    </div>
+                </div>
+                <label for="basic-switch" style="padding-left: 16px; cursor: pointer;">Dark theme</label>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content">
+        <main class="main-content" id="main-content">
+                <div class="documentwrapper">
+                        <div class="bodywrapper">
+                    <div class="body" role="main">
+                        
+  <div class="section" id="cylindrical">
+<h1>Cylindrical<a class="headerlink" href="#cylindrical" title="Permalink to this headline">¶</a></h1>
+<p>A cylindrical joint creates a point that is translated along an axis defined in the reference frame, and a frame that is rotated relative to an existing frame about the same axis.</p>
+<p><strong>Keyword Arguments</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Name given to the joint, default is uppercase characters in alphabetical order (A, B, C, …)</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ref_point_key</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Start point from which the vector component of the joint is defined</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ref_frame_key</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>Reference frame in which the translational and rotational displacement components are defined</p>
+<dl class="field-list simple">
+<dt class="field-odd">param is_form</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>‘constant’ or ‘degree of freedom’</p>
+<dl class="field-list simple">
+<dt class="field-odd">param motion_axis</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p>‘Z’, ‘Y’, or ‘X’. Represents the axis in which rotation and translation are defined,</p>
+<p><strong>Initial Values</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">param initial_t</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Initial value in the translational coordinate</p>
+<dl class="field-list simple">
+<dt class="field-odd">param initial_r</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Initial value for rotation</p>
+<dl class="field-list simple">
+<dt class="field-odd">param rate_t</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Initial speed in the translational coordinate</p>
+<dl class="field-list simple">
+<dt class="field-odd">param rate_r</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Initial speed for rotation</p>
+<p><strong>Spring Parameters</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">param kt</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Stiffness in the translational coordinate</p>
+<dl class="field-list simple">
+<dt class="field-odd">param kr</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Stiffness for rotation</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ct</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Damping in the translational coordinate</p>
+<dl class="field-list simple">
+<dt class="field-odd">param cr</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Rotational damping</p>
+<dl class="field-list simple">
+<dt class="field-odd">param equilibrium_t</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Equilibrium distance in the translational coordinate</p>
+<dl class="field-list simple">
+<dt class="field-odd">param equilibrium_r</dt>
+<dd class="field-odd"><p>numeric</p>
+</dd>
+</dl>
+<p>Equilibrium angle</p>
+</div>
+
+
+                    </div>
+                    <div class="footer">
+                        <hr/>
+                        
+                            &copy;2020, Eliott Radcliffe.<br/>
+                            Powered by <a href="https://www.sphinx-doc.org/">Sphinx 3.3.1</a> &amp;
+                            <a href="https://github.com/m-alzam/sphinx_theme_material">
+                                Material theme 1.1.2
+                            </a>
+                        
+                    </div>
+                        </div>
+                </div>
+        </main>
+    </div>
+
+
+</body>
+</html>

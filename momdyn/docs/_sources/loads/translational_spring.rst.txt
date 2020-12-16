@@ -1,0 +1,35 @@
+Translational Spring
+====================
+
+A translational spring/damper induces an attractive force between two points that is colinear with a vector drawn from the start to end point. The force magnitude is
+
+    F = k (x - e) + c x'
+    
+where k is the spring stiffness, x is the distance between the two points, e is an equilibrium length of the spring, c is the damping constant, and x' is the differential speed between the two points.
+
+**Keyword Arguments**
+
+:param start_point: string
+
+Key for the first point.
+
+:param end_point: string
+
+Key for the second point.
+
+:param k: string or numeric
+
+Parameter corresponding to the spring stiffness constant.
+
+:param c: string or numeric
+
+Parameter corresponding to the damping constant.
+
+:param equilibrium: string or numeric
+
+Parameter corresponding to the equilibrium length of the spring.
+
+:return:
+
+Message describing the created spring
+    

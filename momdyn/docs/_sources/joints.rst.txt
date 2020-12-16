@@ -1,0 +1,80 @@
+Joints
+======
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Joint Types:
+
+   joints/rigid_translation
+   joints/rigid_rotation
+   joints/prismatic
+   joints/revolute
+   joints/cylindrical
+   joints/universal
+   joints/spherical
+   joints/planar
+   joints/free_motion
+
+Mechanical joints are typical of modern multibody software, and combine attributes of the fundamental objects found in the classic interface. A good reference to common joint definitions may be found in the documentation for the open-source Modelica project, in the OpenModelica Mechanics Multibody package. While MOMDYN does not use Modelica  code, I will attempt to use similar terminology and input parameters where applicable.
+
+
+`Rigid Translation <joints/rigid_translation.html>`_
+----------------------------------------------------
+
+A rigid translation creates a point that is translated relative to an existing point with vector components defined in a specified reference frame. The rigid translation is analogous to creating a vector and point using the classic interface.
+
+
+`Rigid Rotation <joints/rigid_rotation.html>`_
+----------------------------------------------
+
+A rigid rotation creates a frame that is oriented relative to an existing frame by a Euler angle sequence.
+
+
+`Prismatic Joint <joints/prismatic.html>`_
+------------------------------------------
+
+Front-end for SymPy `symbols`, `dynamicsymbols`, `Vector` and `Point` types
+
+A prismatic joint creates a point that is translated relative to an existing point with vector components defined in a specified reference frame. The joint is analogous to creating a vector and point using the classic interface. The vector component can be constant valued, or a degree of freedom (DOF) may be generated where the point can translate in the unit vector direction. If the DOF form is chosen, then an optional linear stiffness, damping, and equilibrium distance can be used to include translational spring-damper physics in the joint.
+
+
+`Revolute Joint <joints/revolute.html>`_
+----------------------------------------
+
+Front-end for SymPy `symbols`, `dynamicsymbols`, and `Frame` types
+
+A revolute joint creates a frame that is rotated relative to an existing frame about an axis defined in a specified reference frame. The angular component can be constant valued, or a degree of freedom (DOF) may be generated. If the DOF form is chosen, then an optional rotational stiffness, damping, and equilibrium angle can be used to include rotational spring-damper physics in the joint.
+
+
+`Cylindrical Joint <joints/cylindrical.html>`_
+----------------------------------------------
+
+A cylindrical joint creates a point that is translated along an axis defined in the reference frame, and a frame that is rotated relative to an existing frame about the same axis.
+
+
+`Universal Joint <joints/universal.html>`_
+------------------------------------------
+
+A universal joint creates a frame that is rotated relative to an existing frame using a two angles to define its orientation.
+
+
+`Spherical Joint <joints/spherical.html>`_
+------------------------------------------
+
+A spherical joint creates a frame that is rotated relative to an existing frame using a quaternion to define its orientation. Initial quaternion values are defined using an equivalent Euler angle sequence. The components can be constant valued, or a three degrees of freedom (DOF) form may be generated.
+
+
+`Planar Joint <joints/planar.html>`_
+------------------------------------
+
+Front-end for SymPy `symbols`, `dynamicsymbols`, `Frame`, and `Point` types
+
+A planar joint creates a point that is translated by two components coordinates defined in the reference frame, and a frame that is rotated relative to an existing frame about an axis that is normal to the two components. The components can be constant valued, or a three degrees of freedom (DOF) form may be generated. If the DOF form is chosen, then optional stiffness, damping, and equilibrium coefficients can be used to include translational and rotational spring-damper physics in the joint.
+
+
+`Free Motion Joint <joints/free_motion.html>`_
+----------------------------------------------
+
+Front-end for SymPy `symbols`, `dynamicsymbols`, `Frame`, and `Point` types
+
+A free motion joint creates a point that is translated by three components coordinates defined in the reference frame, and a frame that is rotated relative to an existing frame using a quaternion to define its orientation. Initial quaternion values are defined using an equivalent Euler angle sequence. The components can be constant valued, or a six degrees of freedom (DOF) form may be generated. If the DOF form is chosen, then optional stiffness, damping, and equilibrium coefficients can be used to include translational and rotational spring-damper physics in the joint.

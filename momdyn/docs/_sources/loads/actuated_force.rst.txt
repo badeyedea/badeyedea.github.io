@@ -1,0 +1,39 @@
+Actuated Force
+==============
+
+An actuated force acts with equal and opposite magnitude on two points, with vector components x, y, and z defined in the reference frame.
+
+**Keyword Arguments**
+
+:param name: string
+
+Name given to the force.
+
+:param ref_frame_key: string
+
+Reference frame in which the vector components of the force are defined.
+
+:param start_point: string
+
+First point upon which the force acts.
+
+:param end_point: string
+
+Second point upon which the force acts, with negative magnitude.
+
+:param force: numeric
+
+Force magnitude.
+
+:param x: numeric
+
+X-component of the vector aligned with the force.
+
+:param y: numeric
+
+Y-component of the vector aligned with the force.
+
+:param z: numeric
+
+Z-component of the vector aligned with the force.
+    

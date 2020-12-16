@@ -1,0 +1,193 @@
+
+<!doctype html>
+
+
+<html >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Mobile Multibody Dynamics &#8212; momdyn 1.3.0 documentation</title>
+    <style>
+        :root {
+            --mdc-theme-primary: #6200ee;
+            --mdc-theme-secondary: #018786;
+        }
+    </style>
+
+    <link rel="stylesheet" href="_static/bundle.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
+    <script type="text/javascript" id="documentation_options" data-url_root="./"
+            src="_static/documentation_options.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="_static/bundle.js" async></script>
+    <script src="_static/underscore.js" async></script>
+    <script src="_static/doctools.js" async></script>
+    <script src="_static/language_data.js" async></script>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="index" title="Index" href="genindex.html"/>
+            <link rel="search" title="Search" href="search.html"/>
+            <link rel="next" title="Mechanism Module" href="mechanism.html"/> 
+</head>
+<body class="mdc-typography scroll">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                <span class="mdc-top-app-bar__title"><a href="#"
+                                                        class="nostylea title">momdyn 1.3.0 documentation</a></span>
+            </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="navigation">
+                    <a href="search.html" class="material-icons mdc-top-app-bar__action-item"
+                       aria-label="Search" title="Search">search</a>
+                </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title"><a class="nostylea" href="#">momdyn 1.3.0 documentation</a></h3>
+        </div>
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <h6 class="mdc-list-group__subheader">Contents</h6>
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="mechanism.html">Mechanism Module</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+</ul>
+
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Navigation</h6>
+                
+                    <a href="mechanism.html" title="Mechanism Module" class="reference">Next</a><br/>
+                
+                
+                
+                    <a href="_sources/index.rst.txt" rel="nofollow" class="reference"
+                       title="Go to page source">Page source</a><br/>
+                
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Options</h6>
+                <div class="mdc-switch">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__thumb-underlay">
+                        <div class="mdc-switch__thumb">
+                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                        </div>
+                    </div>
+                </div>
+                <label for="basic-switch" style="padding-left: 16px; cursor: pointer;">Dark theme</label>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content">
+        <main class="main-content" id="main-content">
+                <div class="documentwrapper">
+                        <div class="bodywrapper">
+                    <div class="body" role="main">
+                        
+  <div class="section" id="mobile-multibody-dynamics">
+<h1>Mobile Multibody Dynamics<a class="headerlink" href="#mobile-multibody-dynamics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="momdyn">
+<h2>MOMDYN<a class="headerlink" href="#momdyn" title="Permalink to this headline">¶</a></h2>
+<p>Mobile Multibody Dynamics (MOMDYN) is the first multibody dynamics app for iOS and Android. MOMDYN provides an easy to use graphical interface that is familiar to engineers and physicists who have studied classical mechanics, with a limited but powerful set of features similar to modern modeling and simulation software. The software forms a bridge between the”first-principles” approach to dynamics problem solving where one defines kinematic and dynamic equations by hand before developing custom code for each individual system, and the modern approach where the fundamental mathematical equations are obfuscated behind a purely graphical, computer aided design (CAD)-like interface.</p>
+<p>The analytical back-end of MOMDYN, referred to here as the “Mechanism module,” is implemented using Python, taking very basic data classes (numeric and string) as user inputs to numerous high-level, object-oriented methods. The graphical front-end of MOMDYN, referred to here as the “Touch interface,” is the means for the user to interact with and visualize elements of the Mechanism module.</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h1><a class="reference external" href="mechanism.html">Mechanism Module</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="numeric-and-string-input-definition">
+<h2>Numeric and string input definition<a class="headerlink" href="#numeric-and-string-input-definition" title="Permalink to this headline">¶</a></h2>
+<p>The mobile implementation requires simplification of the user input commensurate with the limited interaction capability provided by a mobile device compared to a desktop workstation. Many high-level methods available in open source software have been re-structured in MOMDYN such that their inputs can be defined using only numeric and string variables.</p>
+</div>
+<div class="section" id="new-edit-delete-methods">
+<h2>New/edit/delete methods<a class="headerlink" href="#new-edit-delete-methods" title="Permalink to this headline">¶</a></h2>
+<p>Each object implemented in the Mechanism module has a “new,” “edit,” and “delete” method.</p>
+</div>
+<div class="section" id="embedded-documentation">
+<h2>Embedded documentation<a class="headerlink" href="#embedded-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Each object implemented in the Mechanism module has documentation that can be accessed from the front-end interface.</p>
+</div>
+<div class="section" id="equation-of-motion-generation">
+<h2>Equation of motion generation<a class="headerlink" href="#equation-of-motion-generation" title="Permalink to this headline">¶</a></h2>
+<p>Once the kinematic and dynamic relations are defined in the Mechanism module, equations relating the generalized coordinates to generalized speeds, equilibrium conditions, mass and forcing matrix are automatically derived. These can be displayed in the front-end, or exported to human-readable source code or typeset reports.</p>
+</div>
+<div class="section" id="simulation">
+<h2>Simulation<a class="headerlink" href="#simulation" title="Permalink to this headline">¶</a></h2>
+<p>Commonly used open-source numerical integration algorithms necessary for simulation of dynamic systems have been implemented in architectures that cannot be compiled on mobile device. MOMDYN includes a custom simulation routine that can be built on all devices.</p>
+</div>
+<div class="section" id="automated-code-generation">
+<h2>Automated code generation<a class="headerlink" href="#automated-code-generation" title="Permalink to this headline">¶</a></h2>
+<p>Complex dynamics models created in MOMDYN require interactivity with desktop workstations or high performance computing systems to execute fast and/or high volume analysis. The Mechanism module provides an interface to automatically generate human-readable source code in C, Python, or MATLAB formats that can be transferred to these systems.</p>
+</div>
+<div class="section" id="common-file-formats">
+<h2>Common file formats<a class="headerlink" href="#common-file-formats" title="Permalink to this headline">¶</a></h2>
+<p>An analyst may initially begin creating their model in MOMDYN, before transitioning to a desktop software application. The Mechanism module can export the constituent objects to standard data file formats that can be subsequently imported into these alternate applications.</p>
+</div>
+<div class="section" id="professional-document-generation">
+<h2>Professional document generation<a class="headerlink" href="#professional-document-generation" title="Permalink to this headline">¶</a></h2>
+<p>Text and images describing the model are automatically generated and may be exported into a LaTeX formatted file. This may be compiled into a form suitable for academic publication or corporate reports.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mechanism.html">Mechanism Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id1">Classic Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id2">Joints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id3">Bodies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id4">Loads</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h1><a class="reference external" href="getting_started.html">Touch Interface</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="diagram-view">
+<h2>Diagram view<a class="headerlink" href="#diagram-view" title="Permalink to this headline">¶</a></h2>
+<p>The modeling components are by default displayed in a schematic representation similar to academic textbooks used in teaching advanced dynamics courses. A 3-D environment may also be chosen where components are shown as primitive solids. The diagram view is also the primary interface for the user to create and edit modeling components, and initiate equation generation and simulation routines.</p>
+</div>
+<div class="section" id="report-view">
+<h2>Report view<a class="headerlink" href="#report-view" title="Permalink to this headline">¶</a></h2>
+<p>A preview of the professional documentation is shown. Tabbed controls allow the user to flip between sections of the document, with separate tabs for constants, generalized coordinates, generalized speeds, frames, vectors, points, bodies, loads, equations of motion, and plots.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#welcome-screen">Welcome Screen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#diagram-view">Diagram View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#report-view">Report View</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+                    </div>
+                    <div class="footer">
+                        <hr/>
+                        
+                            &copy;2020, Eliott Radcliffe.<br/>
+                            Powered by <a href="https://www.sphinx-doc.org/">Sphinx 3.3.1</a> &amp;
+                            <a href="https://github.com/m-alzam/sphinx_theme_material">
+                                Material theme 1.1.2
+                            </a>
+                        
+                    </div>
+                        </div>
+                </div>
+        </main>
+    </div>
+
+
+</body>
+</html>
