@@ -5,44 +5,24 @@ A general rigid body has its center of gravity (CG) located at a user-specified 
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this body.
 
-Key to be used when referencing this body.
+:param str ref_point_key: Key of the point at which this body's CG is located.
 
-:param ref_point_key: string
+:param str ref_frame_key: ey of the frame to which this body orientation is defined.
 
-Key of the point at which this body's CG is located.
+:param numeric mass: Mass of this body.
 
-:param ref_frame_key: string
+:param numeric ixx: Moment of inertia (MOI) of this body defined relative to its CG about the reference frame's X-axis.
 
-Key of the frame to which this body orientation is defined.
+:param numeric iyy: MOI of this body defined relative to its CG about the reference frame's Y-axis.
 
-:param mass: numeric
+:param numeric izz: MOI of this body defined relative to its CG about the reference frame's Z-axis.
 
-Mass of this body.
+:param str ixy: Product of inertia (POI) of this body defined relative to its CG in the reference frame's X- and Y-axes.
 
-:param ixx: numeric
+:param str iyz: POI of this body defined relative to its CG in the reference frame's Y- and Z-axes.
 
-Moment of inertia (MOI) of this body defined relative to its CG about the reference frame's X-axis.
+:param str izx: POI of this body defined relative to its CG in the reference frame's Z- and X-axes.
 
-:param iyy: numeric
-
-MOI of this body defined relative to its CG about the reference frame's Y-axis.
-
-:param izz: numeric
-
-MOI of this body defined relative to its CG about the reference frame's Z-axis.
-
-:param ixy: numeric
-
-Product of inertia (POI) of this body defined relative to its CG in the reference frame's X- and Y-axes.
-
-:param iyz: numeric
-
-POI of this body defined relative to its CG in the reference frame's Y- and Z-axes.
-
-:param izx: numeric
-
-POI of this body defined relative to its CG in the reference frame's Z- and X-axes.
-
-:return:
+:return str: Message about the created body

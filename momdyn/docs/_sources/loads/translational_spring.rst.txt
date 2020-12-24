@@ -9,27 +9,18 @@ where k is the spring stiffness, x is the distance between the two points, e is 
 
 **Keyword Arguments**
 
-:param start_point: string
+:param str start_point: Key for the first point.
 
-Key for the first point.
+:param str end_point: Key for the second point.
 
-:param end_point: string
+:param k: Parameter corresponding to the spring stiffness constant.
+:type k: str or numeric
 
-Key for the second point.
+:param c: Parameter corresponding to the damping constant.
+:type c: str or numeric
 
-:param k: string or numeric
+:param equilibrium: Parameter corresponding to the equilibrium length of the spring.
+:type equilibrium: str or numeric
 
-Parameter corresponding to the spring stiffness constant.
-
-:param c: string or numeric
-
-Parameter corresponding to the damping constant.
-
-:param equilibrium: string or numeric
-
-Parameter corresponding to the equilibrium length of the spring.
-
-:return:
-
-Message describing the created spring
+:return str: Message describing the created spring
     

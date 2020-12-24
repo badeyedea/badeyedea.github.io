@@ -2,70 +2,39 @@ Cylindrical
 ===========
 
 A cylindrical joint creates a point that is translated along an axis defined in the reference frame, and a frame that is rotated relative to an existing frame about the same axis. 
-
 **Keyword Arguments**
 
-:param name: string
+:param str name: Name given to the joint, default is uppercase characters in alphabetical order (A, B, C, ...)
 
-Name given to the joint, default is uppercase characters in alphabetical order (A, B, C, ...)
+:param str ref_point_key: Start point from which the vector component of the joint is defined
 
-:param ref_point_key: string
+:param str ref_frame_key: Reference frame in which the translational and rotational displacement components are defined
 
-Start point from which the vector component of the joint is defined
+:param str is_form: 'constant' or 'degree of freedom'
 
-:param ref_frame_key: string
-
-Reference frame in which the translational and rotational displacement components are defined
-
-:param is_form: string
-
-'constant' or 'degree of freedom'
-
-:param motion_axis: string
-
-'Z', 'Y', or 'X'. Represents the axis in which rotation and translation are defined,
+:param str motion_axis: 'Z', 'Y', or 'X'. Represents the axis in which rotation and translation are defined,
 
 **Initial Values**
 
-:param initial_t: numeric
+:param numeric initial_t: Initial value in the translational coordinate
 
-Initial value in the translational coordinate
+:param numeric initial_r: Initial value for rotation
 
-:param initial_r: numeric
+:param numeric rate_t: Initial speed in the translational coordinate
 
-Initial value for rotation
-
-:param rate_t: numeric
-
-Initial speed in the translational coordinate
-
-:param rate_r: numeric
-
-Initial speed for rotation
+:param numeric rate_r: Initial speed for rotation
 
 **Spring Parameters**
 
-:param kt: numeric
+:param numeric kt: Stiffness in the translational coordinate
 
-Stiffness in the translational coordinate
+:param numeric kr: Stiffness for rotation
 
-:param kr: numeric
+:param numeric ct: Damping in the translational coordinate
 
-Stiffness for rotation
+:param numeric cr: Rotational damping
 
-:param ct: numeric
+:param numeric equilibrium_t: Equilibrium distance in the translational coordinate
 
-Damping in the translational coordinate
-
-:param cr: numeric
-
-Rotational damping
-
-:param equilibrium_t: numeric
-
-Equilibrium distance in the translational coordinate
-
-:param equilibrium_r: numeric
-
-Equilibrium angle
+:param numeric equilibrium_r: Equilibrium angle
     

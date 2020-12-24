@@ -5,19 +5,11 @@ A generalized coordinate is a symbolic variable representing the mechanism confi
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: string Key to be used when referencing this coordinate in the mechanism.q dictionary. Can be entered using LaTeX symbol formatting, i.e. \theta yields θ, etc
 
-Key to be used when referencing this coordinate in the mechanism.q dictionary. Can be entered using LaTeX symbol formatting, i.e. \theta yields θ, etc
+:param numeric initial: Initial value for the generalized coordinate
 
-:param initial: numeric
+:param str description: Description of the generalized coordinate
 
-Initial value for the generalized coordinate
-
-:param description: string
-
-Description of the generalized coordinate
-
-:return: string
-
-Message describing the created generalized coordinate
+:return str: Message describing the created generalized coordinate
     

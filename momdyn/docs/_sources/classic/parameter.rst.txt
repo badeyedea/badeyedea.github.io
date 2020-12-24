@@ -5,19 +5,11 @@ A parameter is a symbolic variable used to represent constants in the model. Typ
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this parameter in the mechanism.p dictionary. Can be entered using LaTeX symbol formatting, i.e. \theta yields θ, etc
 
-Key to be used when referencing this parameter in the mechanism.p dictionary. Can be entered using LaTeX symbol formatting, i.e. \theta yields θ, etc
+:param numeric value: Constant value for the parameter
 
-:param value: numeric
+:param str description: Description of the parameter
 
-Constant value for the parameter
-
-:param description: string
-
-Description of the parameter
-
-:return: string
-
-Message describing the created parameter
+:return str: Message describing the created parameter
     

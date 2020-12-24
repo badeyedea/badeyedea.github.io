@@ -5,33 +5,19 @@ A rigid body cone is a circular cone of uniform density. The cone has length def
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this cone.
 
-Key to be used when referencing this cone.
+:param str ref_point_key: Key of the point to which this cone is attached, either at its CG, aft, or forward ends.
 
-:param ref_point_key: string
+:param str ref_frame_key: Key of the frame to which this cone orientation is defined.
 
-Key of the point to which this cone is attached, either at its CG, aft, or forward ends.
+:param numeric density: Uniform density of this cone.
 
-:param ref_frame_key: string
+:param numeric length: Dimension of this cone in the X-axis of the body-fixed frame.
 
-Key of the frame to which this cone orientation is defined.
+:param numeric radius: Dimension of this cone in the Y- and Z-axie of the body-fixed frame.
 
-:param density: numeric
+:param str attach_to: CG, fore, or aft
 
-Uniform density of this cone.
-
-:param length: numeric
-
-Dimension of this cone in the X-axis of the body-fixed frame.
-
-:param radius: numeric
-
-Dimension of this cone in the Y- and Z-axie of the body-fixed frame.
-
-:param attach_to: string
-
-CG, fore, or aft
-
-:return:
+:return str: Message about the created cone
     

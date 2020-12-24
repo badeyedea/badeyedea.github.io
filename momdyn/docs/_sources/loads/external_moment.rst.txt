@@ -5,31 +5,17 @@ An external moment acts on a single frame, about a vector with components x, y, 
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Name given to the moment.
 
-Name given to the moment.
+:param str ref_frame_key: Reference frame in which the vector components of the moment are defined.
 
-:param ref_frame_key: string
+:param str loaded_frame_key: Frame upon which the moment acts.
 
-Reference frame in which the vector components of the moment are defined.
+:param numeric moment: Moment magnitude.
 
-:param loaded_frame_key: string
+:param numeric x: X-component of the vector about which the moment is defined.
 
-Frame upon which the moment acts.
+:param numeric y: Y-component of the vector about which the moment is defined.
 
-:param moment: numeric
-
-Moment magnitude.
-
-:param x: numeric
-
-X-component of the vector about which the moment is defined.
-
-:param y: numeric
-
-Y-component of the vector about which the moment is defined.
-
-:param z: numeric
-
-Z-component of the vector about which the moment is defined.
+:param numeric z: Z-component of the vector about which the moment is defined.
     

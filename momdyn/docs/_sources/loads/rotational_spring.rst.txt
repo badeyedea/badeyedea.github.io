@@ -9,27 +9,17 @@ where k is the spring stiffness, θ is the angle between the two frames, c is th
 
 **Keyword Arguments**
 
-:param ref_point_key: string
+:param str ref_point_key: Key for the point where the rotational spring is visualized.
 
-Key for the point where the rotational spring is visualized.
+:param str first_frame_key: Key for the first frame.
 
-:param first_frame_key: string
+:param str second_frame_key: Key for the second frame.
 
-Key for the first frame.
+:param k: Parameter corresponding to the spring stiffness constant.
+:type k: str or numeric
 
-:param second_frame_key: string
+:param c: Parameter corresponding to the damping constant.
+:type c: str or numeric
 
-Key for the second frame.
-
-:param k: string or numeric
-
-Parameter corresponding to the spring stiffness constant.
-
-:param c: string or numeric
-
-Parameter corresponding to the damping constant.
-
-:return:
-
-Message describing the created spring
+:return str: Message describing the created spring
     

@@ -5,17 +5,11 @@ A point has a location, velocity, and acceleration relative to the inertial refe
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this point.
 
-Key to be used when referencing this point.
+:param str ref_point_key: Key of the point from which the created points position will be measured.
 
-:param ref_point_key: string
+:param str vector_key: Key of the vector used to define the position of the created point relative to the reference point.
 
-Key of the point from which the created points position will be measured.
-
-:param vector_key: string
-
-Key of the vector used to define the position of the created point relative to the reference point.
-
-:return:
+:return str: Message about the created point
     

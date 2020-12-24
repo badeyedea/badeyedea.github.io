@@ -5,17 +5,11 @@ A particle is a mass that is fixed to a point, with no inertia tensor.
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this particle.
 
-Key to be used when referencing this particle.
+:param str ref_point_key: Key of the point to which this particle is fixed.
 
-:param ref_point_key: string
+:param str mass: Mass to be assigned to this particle, usually an existing parameter (symbolic constant).
 
-Key of the point to which this particle is fixed.
-
-:param mass: string or numeric
-
-Mass to be assigned to this particle, usually an existing parameter (symbolic constant).
-
-:return:
+:return str: Message describing the particle.
     

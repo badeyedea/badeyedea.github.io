@@ -5,35 +5,19 @@ An actuated force acts with equal and opposite magnitude on two points, with vec
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Name given to the force.
 
-Name given to the force.
+:param str ref_frame_key: Reference frame in which the vector components of the force are defined.
 
-:param ref_frame_key: string
+:param str start_point: First point upon which the force acts.
 
-Reference frame in which the vector components of the force are defined.
+:param str end_point: Second point upon which the force acts, with negative magnitude.
 
-:param start_point: string
+:param numeric force: Force magnitude.
 
-First point upon which the force acts.
+:param numeric x: X-component of the vector aligned with the force.
 
-:param end_point: string
+:param numeric y: Y-component of the vector aligned with the force.
 
-Second point upon which the force acts, with negative magnitude.
-
-:param force: numeric
-
-Force magnitude.
-
-:param x: numeric
-
-X-component of the vector aligned with the force.
-
-:param y: numeric
-
-Y-component of the vector aligned with the force.
-
-:param z: numeric
-
-Z-component of the vector aligned with the force.
+:param numeric z: Z-component of the vector aligned with the force.
     

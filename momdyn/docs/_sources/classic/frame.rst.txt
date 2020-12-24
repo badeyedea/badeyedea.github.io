@@ -5,31 +5,22 @@ A reference frame is a set of three orthonormal basis vectors which are rotated 
 
 **Keyword Arguments**
 
-:param ref_point_key: string
+:param str ref_point_key: Name of the point where the frame will be centered, for visualization in the diagram.
 
-Name of the point where the frame will be centered, for visualization in the diagram.
+:param str ref_frame_key: Name of the reference frame from which the relative orientation angles are measured.
 
-:param ref_frame_key: string
+:param str rotation_sequence: Euler angle sequence, for example, 'ZYX' corresponds to a yaw-pitch-roll sequence, where the first_angle is a rotation about the Z-axis of the original reference frame, the second_angle is a rotation about the Y'-axis of an intermediate frame, and the third_angle is a rotation about the X''-axis of a second intermediate frame.
 
-Name of the reference frame from which the relative orientation angles are measured.
+:param first_angle: First rotation angle (i.e. yaw rotation in the 'ZYX' example).
+:type first_angle: str or numeric
 
-:param rotation_sequence: string
+:param second_angle: Second rotation angle (i.e. pitch rotation in the 'ZYX' example).
+:type second_angle: str or numeric
 
-Euler angle sequence, for example, 'ZYX' corresponds to a yaw-pitch-roll sequence, where the first_angle is a rotation about the Z-axis of the original reference frame, the second_angle is a rotation about the Y'-axis of an intermediate frame, and the third_angle is a rotation about the X''-axis of a second intermediate frame.
+:param third_angle: Third rotation angle (i.e. roll rotation in the 'ZYX' example.
+:type third_angle: str or numeric
 
-:param first_angle: string or numeric
-
-First rotation angle (i.e. yaw rotation in the 'ZYX' example).
-
-:param second_angle: string or numeric
-
-Second rotation angle (i.e. pitch rotation in the 'ZYX' example).
-
-:param third_angle: string or numeric
-
-Third rotation angle (i.e. roll rotation in the 'ZYX' example.
-
-:return: string
+:return str: Message about the created frame
 
 Message describing the created frame.
     

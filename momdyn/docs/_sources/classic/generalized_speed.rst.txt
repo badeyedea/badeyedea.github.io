@@ -5,23 +5,13 @@ A generalized speed is a symbolic variable representing the mechanism motion. It
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this coordinate in the mechanism.q dictionary. Can be entered using LaTeX symbol formatting, i.e. \omega yields ω, etc.
 
-Key to be used when referencing this coordinate in the mechanism.q dictionary. Can be entered using LaTeX symbol formatting, i.e. \omega yields ω, etc.
+:param str equates_to: Equation representing terms in the point velocity or frame angular velocity equations that will be replaced by this generalized speed.
 
-:param equates_to: string
+:param numeric initial: Initial value for the generalized speed
 
-Equation representing terms in the point velocity or frame angular velocity equations that will be replaced by this generalized speed.
+:param str description: Description of the generalized speed
 
-:param initial: numeric
-
-Initial value for the generalized speed
-
-:param description: string
-
-Description of the generalized speed
-
-:return: string
-
-Message describing the created generalized speed
+:return str: Message describing the created generalized speed
     

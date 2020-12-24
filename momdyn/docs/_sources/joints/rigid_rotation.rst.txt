@@ -5,29 +5,17 @@ A rigid rotation creates a frame that is oriented relative to an existing frame 
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Name given to the rigid rotation, default is uppercase characters in alphabetical order (A, B, C, ...)
 
-Name given to the rigid rotation, default is uppercase characters in alphabetical order (A, B, C, ...)
+:param str ref_point_key: Point where the frame is visualized
 
-:param ref_point_key: string
-
-Point where the frame is visualized
-
-:param ref_frame_key: string
-
-Reference frame from which the orientation of the new frame is defined relative to
+:param str ref_frame_key: Reference frame from which the orientation of the new frame is defined relative to
 
 **Vector Components**
 
-:param first_angle: numeric
+:param numeric first_angle: First angle in the sequence in radians
 
-First angle in the sequence in radians
+:param numeric second_angle: Second angle in the sequence in radians
 
-:param second_angle: numeric
-
-Second angle in the sequence in radians
-
-:param third_angle: numeric
-
-Third angle in the sequence in radians
+:param numeric third_angle: Third angle in the sequence in radians
     

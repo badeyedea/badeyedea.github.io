@@ -5,36 +5,20 @@ A rigid body box is a rectangular prism of uniform density. The box has length d
 
 **Keyword Arguments**
 
-:param name: string
+:param str name: Key to be used when referencing this box.
 
-Key to be used when referencing this box.
+:param str ref_point_key: Key of the point to which this box is attached, either at its CG, aft, or forward ends.
 
-:param ref_point_key: string
+:param str ref_frame_key: Key of the frame to which this box orientation is defined.
 
-Key of the point to which this box is attached, either at its CG, aft, or forward ends.
+:param numeric density: Uniform density of this box.
 
-:param ref_frame_key: string
+:param numeric length: Dimension of this box in the X-axis of the body-fixed frame.
 
-Key of the frame to which this box orientation is defined.
+:param numeric width: Dimension of this box in the Y-axis of the body-fixed frame.
 
-:param density: numeric
+:param numeric height: Dimension of this box in the Z-axis of the body-fixed frame.
 
-Uniform density of this box.
+:param str attach_to: CG, fore, or aft
 
-:param length: numeric
-
-Dimension of this box in the X-axis of the body-fixed frame.
-
-:param width: numeric
-
-Dimension of this box in the Y-axis of the body-fixed frame.
-
-:param height: numeric
-
-Dimension of this box in the Z-axis of the body-fixed frame.
-
-:param attach_to: string
-
-CG, fore, or aft
-
-:return:
+:return str: Message about the created box
