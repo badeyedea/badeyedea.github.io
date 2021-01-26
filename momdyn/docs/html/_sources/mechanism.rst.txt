@@ -1,7 +1,7 @@
 Mechanism Module
 ================
 
-*`Classic Interface <classic.html>`_*
+`Classic Interface <classic.html>`_
 
 The classic interface implements several fundamental components for defining kinematics, largely based on the physics and classical mechanics modules in SymPy.
 
@@ -12,7 +12,7 @@ The classic interface implements several fundamental components for defining kin
    classic
 
 
-*`Joints <joints.html>`_*
+`Joints <joints.html>`_
 
 Mechanical joints are typical of modern multibody software, and combine attributes of the fundamental objects found in the classic interface. A good reference to common joint definitions may be found in the documentation for the open-source Modelica project, in the OpenModelica Mechanics Multibody package. While MOMDYN does not use Modelica  code, I will attempt to use similar terminology and input parameters where applicable.
 
@@ -23,7 +23,7 @@ Mechanical joints are typical of modern multibody software, and combine attribut
    joints
 
 
-*`Bodies <bodies.html>`_*
+`Bodies <bodies.html>`_
 
 Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass defined at the body's mass-center, and inertia tensors dependent on the body geometry.
 
@@ -34,7 +34,7 @@ Bodies are used to define the mass and inertial properties of the model. The mos
    bodies
 
 
-*`Loads <loads.html>`_*
+`Loads <loads.html>`_
 
 Loads are the forces and moments that are exerted on points and frames in the model, respectively.
 
