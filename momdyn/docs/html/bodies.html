@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bodies &#8212; momdyn 1.3.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Particle" href="bodies/particle.html" />
+    <link rel="prev" title="Free Motion" href="joints/free_motion.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+    <link rel="apple-touch-icon" href="_static/mom_icon_dark.png" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="bodies">
+<h1>Bodies<a class="headerlink" href="#bodies" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Body Types:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="bodies/particle.html">Particle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bodies/general_rigid_body.html">General Rigid Body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_box.html">Rigid Body Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_cone.html">Rigid Body Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
+</ul>
+</div>
+<p>Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass defined at the body’s mass-center, and inertia tensors dependent on the body geometry.</p>
+<div class="section" id="id1">
+<h2><a class="reference external" href="bodies/particle.html">Particle</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>A particle is a mass that is fixed to a point, with no inertia tensor.</p>
+</div>
+<div class="section" id="id2">
+<h2><a class="reference external" href="bodies/general_rigid_body.html">General Rigid Body</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>A general rigid body has its center of gravity (CG) located at a user-specified point and orientation defined in a specified frame, a fixed mass, and specified inertia tensor.</p>
+</div>
+<div class="section" id="id3">
+<h2><a class="reference external" href="bodies/rigid_body_box.html">Rigid Body Box</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>A rigid body box is a rectangular prism of uniform density. The box has length defined in the X-axis, width defined in the Y-axis, and height defined in the Z-axis, where (X, Y, Z) are the basis vectors of the body fixed frame.</p>
+</div>
+<div class="section" id="id4">
+<h2><a class="reference external" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>A rigid body cylinder is a circular rod of uniform density. The cylinder has length defined in the X-axis, and radius for the Y- anc Z-axes, where (X, Y, Z) are the basis vectors of the body fixed frame.</p>
+</div>
+<div class="section" id="id5">
+<h2><a class="reference external" href="bodies/rigid_body_cone.html">Rigid Body Cone</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>A rigid body cone is a circular cone of uniform density. The cone has length defined in the X-axis, and radius for the Y- anc Z-axes, where (X, Y, Z) are the basis vectors of the body fixed frame.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/mom_icon_dark.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">The first multibody dynamics app for iOS and Android</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="mechanism.html">Mechanism Module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id1">Classic Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id2">Joints</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="mechanism.html#id3">Bodies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id4">Loads</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="mechanism.html">Mechanism Module</a><ul>
+      <li>Previous: <a href="joints/free_motion.html" title="previous chapter">Free Motion</a></li>
+      <li>Next: <a href="bodies/particle.html" title="next chapter">Particle</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Eliott Radcliffe.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/bodies.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

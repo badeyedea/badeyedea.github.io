@@ -1,0 +1,36 @@
+Revolute
+========
+
+A revolute joint creates a frame that is rotated relative to an existing frame about an axis defined in a specified reference frame. The angular component can be constant valued, or a degree of freedom (DOF) may be generated. If the DOF form is chosen, then an optional rotational stiffness, damping, and equilibrium angle can be used to include rotational spring-damper physics in the joint.
+
+**Keyword Arguments**
+
+:param str name: Name given to the joint, default is uppercase characters in alphabetical order (A, B, C, ...)
+
+:param str ref_point_key: Point at which the joint is displayed
+
+:param str ref_frame_key: Reference frame in which the components of the rotation axis are defined
+
+:param str is_form: 'constant' or 'degree of freedom'
+
+**Rotation Axis Components**
+
+:param numeric x: Component of the rotation axis measured in the x-axis of the reference frame
+
+:param numeric y: Component of the rotation axis measured in the y-axis of the reference frame
+
+:param numeric z: Component of the rotation axis measured in the z-axis of the reference frame
+
+**Initial States**
+
+:param numeric value: Initial value for the generalized coordinate if is_form == 'degree of freedom'
+
+:param numeric rate: Initial value for the generalized speed if is_form == 'degree of freedom'
+
+**Spring Parameters**
+
+:param numeric k: Spring constant
+
+:param numeric c: Damping constant
+
+:param numeric equilibrium: Equilibrium angle

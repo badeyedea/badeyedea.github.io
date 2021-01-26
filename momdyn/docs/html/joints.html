@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joints &#8212; momdyn 1.3.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Rigid Translation" href="joints/rigid_translation.html" />
+    <link rel="prev" title="Point" href="classic/point.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+    <link rel="apple-touch-icon" href="_static/mom_icon_dark.png" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="joints">
+<h1>Joints<a class="headerlink" href="#joints" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Joint Types:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="joints/rigid_translation.html">Rigid Translation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/rigid_rotation.html">Rigid Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/prismatic.html">Prismatic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/revolute.html">Revolute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/cylindrical.html">Cylindrical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/universal.html">Universal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/spherical.html">Spherical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/planar.html">Planar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joints/free_motion.html">Free Motion</a></li>
+</ul>
+</div>
+<p>Mechanical joints are typical of modern multibody software, and combine attributes of the fundamental objects found in the classic interface. A good reference to common joint definitions may be found in the documentation for the open-source Modelica project, in the OpenModelica Mechanics Multibody package. While MOMDYN does not use Modelica  code, I will attempt to use similar terminology and input parameters where applicable.</p>
+<div class="section" id="id1">
+<h2><a class="reference external" href="joints/rigid_translation.html">Rigid Translation</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>A rigid translation creates a point that is translated relative to an existing point with vector components defined in a specified reference frame. The rigid translation is analogous to creating a vector and point using the classic interface.</p>
+</div>
+<div class="section" id="id2">
+<h2><a class="reference external" href="joints/rigid_rotation.html">Rigid Rotation</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>A rigid rotation creates a frame that is oriented relative to an existing frame by a Euler angle sequence.</p>
+</div>
+<div class="section" id="id3">
+<h2><a class="reference external" href="joints/prismatic.html">Prismatic Joint</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Front-end for SymPy <cite>symbols</cite>, <cite>dynamicsymbols</cite>, <cite>Vector</cite> and <cite>Point</cite> types</p>
+<p>A prismatic joint creates a point that is translated relative to an existing point with vector components defined in a specified reference frame. The joint is analogous to creating a vector and point using the classic interface. The vector component can be constant valued, or a degree of freedom (DOF) may be generated where the point can translate in the unit vector direction. If the DOF form is chosen, then an optional linear stiffness, damping, and equilibrium distance can be used to include translational spring-damper physics in the joint.</p>
+</div>
+<div class="section" id="id4">
+<h2><a class="reference external" href="joints/revolute.html">Revolute Joint</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Front-end for SymPy <cite>symbols</cite>, <cite>dynamicsymbols</cite>, and <cite>Frame</cite> types</p>
+<p>A revolute joint creates a frame that is rotated relative to an existing frame about an axis defined in a specified reference frame. The angular component can be constant valued, or a degree of freedom (DOF) may be generated. If the DOF form is chosen, then an optional rotational stiffness, damping, and equilibrium angle can be used to include rotational spring-damper physics in the joint.</p>
+</div>
+<div class="section" id="id5">
+<h2><a class="reference external" href="joints/cylindrical.html">Cylindrical Joint</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>A cylindrical joint creates a point that is translated along an axis defined in the reference frame, and a frame that is rotated relative to an existing frame about the same axis.</p>
+</div>
+<div class="section" id="id6">
+<h2><a class="reference external" href="joints/universal.html">Universal Joint</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>A universal joint creates a frame that is rotated relative to an existing frame using a two angles to define its orientation.</p>
+</div>
+<div class="section" id="id7">
+<h2><a class="reference external" href="joints/spherical.html">Spherical Joint</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>A spherical joint creates a frame that is rotated relative to an existing frame using a quaternion to define its orientation. Initial quaternion values are defined using an equivalent Euler angle sequence. The components can be constant valued, or a three degrees of freedom (DOF) form may be generated.</p>
+</div>
+<div class="section" id="id8">
+<h2><a class="reference external" href="joints/planar.html">Planar Joint</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Front-end for SymPy <cite>symbols</cite>, <cite>dynamicsymbols</cite>, <cite>Frame</cite>, and <cite>Point</cite> types</p>
+<p>A planar joint creates a point that is translated by two components coordinates defined in the reference frame, and a frame that is rotated relative to an existing frame about an axis that is normal to the two components. The components can be constant valued, or a three degrees of freedom (DOF) form may be generated. If the DOF form is chosen, then optional stiffness, damping, and equilibrium coefficients can be used to include translational and rotational spring-damper physics in the joint.</p>
+</div>
+<div class="section" id="id9">
+<h2><a class="reference external" href="joints/free_motion.html">Free Motion Joint</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Front-end for SymPy <cite>symbols</cite>, <cite>dynamicsymbols</cite>, <cite>Frame</cite>, and <cite>Point</cite> types</p>
+<p>A free motion joint creates a point that is translated by three components coordinates defined in the reference frame, and a frame that is rotated relative to an existing frame using a quaternion to define its orientation. Initial quaternion values are defined using an equivalent Euler angle sequence. The components can be constant valued, or a six degrees of freedom (DOF) form may be generated. If the DOF form is chosen, then optional stiffness, damping, and equilibrium coefficients can be used to include translational and rotational spring-damper physics in the joint.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/mom_icon_dark.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">The first multibody dynamics app for iOS and Android</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="mechanism.html">Mechanism Module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id1">Classic Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="mechanism.html#id2">Joints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id3">Bodies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id4">Loads</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="mechanism.html">Mechanism Module</a><ul>
+      <li>Previous: <a href="classic/point.html" title="previous chapter">Point</a></li>
+      <li>Next: <a href="joints/rigid_translation.html" title="next chapter">Rigid Translation</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Eliott Radcliffe.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/joints.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
