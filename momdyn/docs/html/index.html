@@ -1,140 +1,209 @@
-
 <!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Mechanism Module" href="mechanism.html" />
 
-
-<html >
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta charset="utf-8"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Mobile Multibody Dynamics &#8212; momdyn 1.3.0 documentation</title>
-    <style>
-        :root {
-            --mdc-theme-primary: #6200ee;
-            --mdc-theme-secondary: #018786;
-        }
-    </style>
-
-    <link rel="stylesheet" href="_static/bundle.css" type="text/css"/>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
-    <script type="text/javascript" id="documentation_options" data-url_root="./"
-            src="_static/documentation_options.js" async></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="_static/bundle.js" async></script>
-    <script src="_static/underscore.js" async></script>
-    <script src="_static/doctools.js" async></script>
-    <script src="_static/language_data.js" async></script>
+    <meta name="generator" content="sphinx-3.3.1, furo 2020.12.30.beta24"/>
+        <title>Home - momdyn 1.4.1 documentation</title>
+      <link rel="stylesheet" href="_static/styles/furo.css?digest=33d2fc4f3f180ec1ffc6524e273e21d7d58cbe49">
+    <link rel="stylesheet" href="_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
     
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="index" title="Index" href="genindex.html"/>
-            <link rel="search" title="Search" href="search.html"/>
-            <link rel="next" title="Mechanism Module" href="mechanism.html"/> 
-</head>
-<body class="mdc-typography scroll">
-    <header class="mdc-top-app-bar app-bar" id="app-bar">
-        <div class="mdc-top-app-bar__row">
-            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-                <span class="mdc-top-app-bar__title"><a href="#"
-                                                        class="nostylea title">momdyn 1.3.0 documentation</a></span>
-            </section>
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="navigation">
-                    <a href="search.html" class="material-icons mdc-top-app-bar__action-item"
-                       aria-label="Search" title="Search">search</a>
-                </section>
-        </div>
-    </header>
-    <aside class="mdc-drawer mdc-drawer--modal">
-        <div class="mdc-drawer__header">
-            <h3 class="mdc-drawer__title"><a class="nostylea" href="#">momdyn 1.3.0 documentation</a></h3>
-        </div>
-        <div class="mdc-drawer__content">
-            <div class="mdc-list">
-                <h6 class="mdc-list-group__subheader">Contents</h6>
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="mechanism.html">Mechanism Module</a></li>
+
+
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link rel="stylesheet" href="_static/styles/furo-extensions.css?digest=26485485040e7aaf717c13fd0188a5ad2c2deb60">
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script defer="defer" src="_static/jquery.js"></script>
+    <script defer="defer" src="_static/underscore.js"></script>
+    <script defer="defer" src="_static/doctools.js"></script>
+    <script defer="defer" src="_static/language_data.js"></script>
+    <script defer src="_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="#"><div class="brand">momdyn 1.4.1 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+  
+  
+  <span class="sidebar-brand-text">momdyn 1.4.1 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html">
+  <input class="sidebar-search" placeholder=Search name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="mechanism.html">Mechanism Module</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="classic/parameter.html">Parameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classic/generalized_coordinate.html">Generalized Coordinate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classic/generalized_speed.html">Generalized Speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classic/frame.html">Frame</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classic/vector.html">Vector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classic/point.html">Point</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="joints/rigid_translation.html">Rigid Translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/rigid_rotation.html">Rigid Rotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/prismatic.html">Prismatic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/revolute.html">Revolute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/cylindrical.html">Cylindrical</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/universal.html">Universal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/spherical.html">Spherical</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/planar.html">Planar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="joints/free_motion.html">Free Motion</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="bodies.html">Bodies</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="bodies/particle.html">Particle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bodies/general_rigid_body.html">General Rigid Body</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_box.html">Rigid Body Box</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_cone.html">Rigid Body Cone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="loads/external_force.html">External Force</a></li>
+<li class="toctree-l3"><a class="reference internal" href="loads/actuated_force.html">Actuated Force</a></li>
+<li class="toctree-l3"><a class="reference internal" href="loads/external_moment.html">External Moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="loads/actuated_moment.html">Actuated Moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="loads/translational_spring.html">Translational Spring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="loads/rotational_spring.html">Rotational Spring</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Getting Started</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu_dialog.html">Menu Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save.html">Save and Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
 </ul>
 
-
-                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Navigation</h6>
-                
-                    <a href="mechanism.html" title="Mechanism Module" class="reference">Next</a><br/>
-                
-                
-                
-                    <a href="_sources/index.rst.txt" rel="nofollow" class="reference"
-                       title="Go to page source">Page source</a><br/>
-                
-
-                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Options</h6>
-                <div class="mdc-switch">
-                    <div class="mdc-switch__track"></div>
-                    <div class="mdc-switch__thumb-underlay">
-                        <div class="mdc-switch__thumb">
-                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
-                        </div>
-                    </div>
-                </div>
-                <label for="basic-switch" style="padding-left: 16px; cursor: pointer;">Dark theme</label>
-            </div>
-        </div>
-    </aside>
-
-    <div class="mdc-drawer-scrim"></div>
-
-    <div class="mdc-drawer-app-content">
-        <main class="main-content" id="main-content">
-                <div class="documentwrapper">
-                        <div class="bodywrapper">
-                    <div class="body" role="main">
-                        
-  <div class="section" id="mobile-multibody-dynamics">
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="mobile-multibody-dynamics">
 <h1>Mobile Multibody Dynamics<a class="headerlink" href="#mobile-multibody-dynamics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="momdyn">
-<h2>MOMDYN<a class="headerlink" href="#momdyn" title="Permalink to this headline">¶</a></h2>
 <p>Mobile Multibody Dynamics (MOMDYN) is the first multibody dynamics app for iOS and Android. MOMDYN provides an easy to use graphical interface that is familiar to engineers and physicists who have studied classical mechanics, with a limited but powerful set of features similar to modern modeling and simulation software. The software forms a bridge between the”first-principles” approach to dynamics problem solving where one defines kinematic and dynamic equations by hand before developing custom code for each individual system, and the modern approach where the fundamental mathematical equations are obfuscated behind a purely graphical, computer aided design (CAD)-like interface.</p>
-<p>The analytical back-end of MOMDYN, referred to here as the “Mechanism module,” is implemented using Python, taking very basic data classes (numeric and string) as user inputs to numerous high-level, object-oriented methods. The graphical front-end of MOMDYN, referred to here as the “Touch interface,” is the means for the user to interact with and visualize elements of the Mechanism module.</p>
-</div>
-</div>
 <div class="section" id="id1">
-<h1><a class="reference external" href="mechanism.html">Mechanism Module</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="numeric-and-string-input-definition">
-<h2>Numeric and string input definition<a class="headerlink" href="#numeric-and-string-input-definition" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="mechanism.html">Mechanism Module</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The analytical back-end of MOMDYN, referred to here as the “Mechanism module,” is implemented using Python, taking very basic data classes (numeric and string) as user inputs to numerous high-level, object-oriented methods.</p>
+<p><em>Numeric and string input definition</em></p>
 <p>The mobile implementation requires simplification of the user input commensurate with the limited interaction capability provided by a mobile device compared to a desktop workstation. Many high-level methods available in open source software have been re-structured in MOMDYN such that their inputs can be defined using only numeric and string variables.</p>
-</div>
-<div class="section" id="new-edit-delete-methods">
-<h2>New/edit/delete methods<a class="headerlink" href="#new-edit-delete-methods" title="Permalink to this headline">¶</a></h2>
+<p><em>New/edit/delete methods</em></p>
 <p>Each object implemented in the Mechanism module has a “new,” “edit,” and “delete” method.</p>
-</div>
-<div class="section" id="embedded-documentation">
-<h2>Embedded documentation<a class="headerlink" href="#embedded-documentation" title="Permalink to this headline">¶</a></h2>
+<p><em>Embedded documentation</em></p>
 <p>Each object implemented in the Mechanism module has documentation that can be accessed from the front-end interface.</p>
-</div>
-<div class="section" id="equation-of-motion-generation">
-<h2>Equation of motion generation<a class="headerlink" href="#equation-of-motion-generation" title="Permalink to this headline">¶</a></h2>
+<p><em>Equation of motion generation</em></p>
 <p>Once the kinematic and dynamic relations are defined in the Mechanism module, equations relating the generalized coordinates to generalized speeds, equilibrium conditions, mass and forcing matrix are automatically derived. These can be displayed in the front-end, or exported to human-readable source code or typeset reports.</p>
-</div>
-<div class="section" id="simulation">
-<h2>Simulation<a class="headerlink" href="#simulation" title="Permalink to this headline">¶</a></h2>
+<p><em>Simulation</em></p>
 <p>Commonly used open-source numerical integration algorithms necessary for simulation of dynamic systems have been implemented in architectures that cannot be compiled on mobile device. MOMDYN includes a custom simulation routine that can be built on all devices.</p>
-</div>
-<div class="section" id="automated-code-generation">
-<h2>Automated code generation<a class="headerlink" href="#automated-code-generation" title="Permalink to this headline">¶</a></h2>
+<p><em>Automated code generation</em></p>
 <p>Complex dynamics models created in MOMDYN require interactivity with desktop workstations or high performance computing systems to execute fast and/or high volume analysis. The Mechanism module provides an interface to automatically generate human-readable source code in C, Python, or MATLAB formats that can be transferred to these systems.</p>
-</div>
-<div class="section" id="common-file-formats">
-<h2>Common file formats<a class="headerlink" href="#common-file-formats" title="Permalink to this headline">¶</a></h2>
+<p><em>Common file formats</em></p>
 <p>An analyst may initially begin creating their model in MOMDYN, before transitioning to a desktop software application. The Mechanism module can export the constituent objects to standard data file formats that can be subsequently imported into these alternate applications.</p>
-</div>
-<div class="section" id="professional-document-generation">
-<h2>Professional document generation<a class="headerlink" href="#professional-document-generation" title="Permalink to this headline">¶</a></h2>
+<p><em>Professional document generation</em></p>
 <p>Text and images describing the model are automatically generated and may be exported into a LaTeX formatted file. This may be compiled into a form suitable for academic publication or corporate reports.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -148,15 +217,14 @@
 </ul>
 </div>
 </div>
-</div>
 <div class="section" id="id2">
-<h1><a class="reference external" href="getting_started.html">Touch Interface</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="diagram-view">
-<h2>Diagram view<a class="headerlink" href="#diagram-view" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="getting_started.html">Touch Interface</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>The graphical front-end of MOMDYN, referred to here as the “Touch interface,” is the means for the user to interact with and visualize elements of the Mechanism module.</p>
+<p><em>Welcome screen</em></p>
+<p>The first screen you will see when opening the app, the welcome screen presents you with the option to create a new model, import an existing model, or to view help documentation or tutorials.</p>
+<p><em>Diagram view</em></p>
 <p>The modeling components are by default displayed in a schematic representation similar to academic textbooks used in teaching advanced dynamics courses. A 3-D environment may also be chosen where components are shown as primitive solids. The diagram view is also the primary interface for the user to create and edit modeling components, and initiate equation generation and simulation routines.</p>
-</div>
-<div class="section" id="report-view">
-<h2>Report view<a class="headerlink" href="#report-view" title="Permalink to this headline">¶</a></h2>
+<p><em>Report view</em></p>
 <p>A preview of the professional documentation is shown. Tabbed controls allow the user to flip between sections of the document, with separate tabs for constants, generalized coordinates, generalized speeds, frames, vectors, points, bodies, loads, equations of motion, and plots.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -166,28 +234,76 @@
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#report-view">Report View</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_dialog.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
 </ul>
 </div>
 </div>
 </div>
 
-
-                    </div>
-                    <div class="footer">
-                        <hr/>
-                        
-                            &copy;2020, Eliott Radcliffe.<br/>
-                            Powered by <a href="https://www.sphinx-doc.org/">Sphinx 3.3.1</a> &amp;
-                            <a href="https://github.com/m-alzam/sphinx_theme_material">
-                                Material theme 1.1.2
-                            </a>
-                        
-                    </div>
-                        </div>
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="mechanism.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
                 </div>
-        </main>
+                <div class="title">Mechanism Module</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2020, Eliott Radcliffe
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            |
+            <a class="muted-link" href="_sources/index.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Mobile Multibody Dynamics</a><ul>
+<li><a class="reference internal" href="#id1">Mechanism Module</a></li>
+<li><a class="reference internal" href="#id2">Touch Interface</a></li>
+</ul>
+</li>
+</ul>
 
-
-</body>
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
 </html>
