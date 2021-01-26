@@ -1,40 +1,109 @@
 
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<html >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Loads &#8212; momdyn 1.3.0 documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="External Force" href="loads/external_force.html" />
-    <link rel="prev" title="Rigid Body Cylinder" href="bodies/rigid_body_cylinder.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-    <link rel="apple-touch-icon" href="_static/mom_icon_dark.png" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <style>
+        :root {
+            --mdc-theme-primary: #6200ee;
+            --mdc-theme-secondary: #018786;
+        }
+    </style>
 
-  </head><body>
-  
+    <link rel="stylesheet" href="_static/bundle.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
+    <script type="text/javascript" id="documentation_options" data-url_root="./"
+            src="_static/documentation_options.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
+    <script src="_static/bundle.js" async></script>
+    <script src="_static/underscore.js" async></script>
+    <script src="_static/doctools.js" async></script>
+    <script src="_static/language_data.js" async></script>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="index" title="Index" href="genindex.html"/>
+            <link rel="search" title="Search" href="search.html"/>
+            <link rel="next" title="External Force" href="loads/external_force.html"/>
+            <link rel="prev" title="Rigid Body Cylinder" href="bodies/rigid_body_cylinder.html"/> 
+</head>
+<body class="mdc-typography scroll">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                <span class="mdc-top-app-bar__title"><a href="index.html"
+                                                        class="nostylea title">momdyn 1.3.0 documentation</a></span>
+            </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="navigation">
+                    <a href="search.html" class="material-icons mdc-top-app-bar__action-item"
+                       aria-label="Search" title="Search">search</a>
+                </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title"><a class="nostylea" href="index.html">momdyn 1.3.0 documentation</a></h3>
+        </div>
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <h6 class="mdc-list-group__subheader">Contents</h6>
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="mechanism.html">Mechanism Module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="classic.html">Classic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="joints.html">Joints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bodies.html">Bodies</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Loads</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+</ul>
 
-          <div class="body" role="main">
-            
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Navigation</h6>
+                
+                    <a href="loads/external_force.html" title="External Force" class="reference">Next</a><br/>
+                
+                
+                    <a href="bodies/rigid_body_cylinder.html" title="Rigid Body Cylinder" class="reference">Previous</a><br/>
+                
+                
+                    <a href="_sources/loads.rst.txt" rel="nofollow" class="reference"
+                       title="Go to page source">Page source</a><br/>
+                
+
+                <h6 class="mdc-list-group__subheader" style="margin-bottom: 16px;">Options</h6>
+                <div class="mdc-switch">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__thumb-underlay">
+                        <div class="mdc-switch__thumb">
+                            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                        </div>
+                    </div>
+                </div>
+                <label for="basic-switch" style="padding-left: 16px; cursor: pointer;">Dark theme</label>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content">
+        <main class="main-content" id="main-content">
+                <div class="documentwrapper">
+                        <div class="bodywrapper">
+                    <div class="body" role="main">
+                        
   <div class="section" id="loads">
 <h1>Loads<a class="headerlink" href="#loads" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
@@ -49,124 +118,45 @@
 </ul>
 </div>
 <p>Loads are the forces and moments that are exerted on points and frames in the model, respectively.</p>
-<div class="section" id="id1">
-<h2><a class="reference external" href="loads/external_force.html">External Force</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><em>`External Force &lt;loads/external_force.html&gt;`_</em></p>
 <p>An external force acts on a single point, with vector components x, y, and z defined in the reference frame.</p>
-</div>
-<div class="section" id="id2">
-<h2><a class="reference external" href="loads/actuated_force.html">Actuated Force</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><em>`Actuated Force &lt;loads/actuated_force.html&gt;`_</em></p>
 <p>An actuated force acts with equal and opposite magnitude on two points, with vector components x, y, and z defined in the reference frame.</p>
-</div>
-<div class="section" id="id3">
-<h2><a class="reference external" href="loads/external_moment.html">External Moment</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><em>`External Moment &lt;loads/external_moment.html&gt;`_</em></p>
 <p>An external moment acts on a single frame, about a vector with components x, y, and z defined in the reference frame.</p>
-</div>
-<div class="section" id="id4">
-<h2><a class="reference external" href="loads/actuated_moment.html">Actuated Moment</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><em>`Actuated Moment &lt;loads/actuated_moment.html&gt;`_</em></p>
 <p>An actuated moment acts with equal and opposite magnitude on two frames, about a vector with components x, y, and z defined in the reference frame.</p>
-</div>
-<div class="section" id="id5">
-<h2><a class="reference external" href="loads/translational_spring.html">Translational Spring</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><em>`Translational Spring &lt;loads/translational_spring.html&gt;`_</em></p>
 <p>A translational spring/damper induces an attractive force between two points that is colinear with a vector drawn from the start to end point. The force magnitude is</p>
 <blockquote>
 <div><p>F = k (x - e) + c x’</p>
 </div></blockquote>
 <p>where k is the spring stiffness, x is the distance between the two points, e is an equilibrium length of the spring, c is the damping constant, and x’ is the differential speed between the two points.</p>
-</div>
-<div class="section" id="id6">
-<h2><a class="reference external" href="loads/rotational_spring.html">Rotational Spring</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p><em>`Rotational Spring &lt;loads/rotational_spring.html&gt;`_</em></p>
 <p>A rotational spring/damper induces an attractive moment between two frames about the rotation axis corresponding to the relative orientation of the frames. The moment magnitude is</p>
 <blockquote>
 <div><p>M = k θ + c θ’</p>
 </div></blockquote>
 <p>where k is the spring stiffness, θ is the angle between the two frames, c is the damping constant, and θ’ is the differential angular speed between the two frames.</p>
 </div>
-</div>
 
 
-          </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<p class="logo">
-  <a href="index.html">
-    <img class="logo" src="_static/mom_icon_dark.png" alt="Logo"/>
-    
-  </a>
-</p>
-
-
-
-<p class="blurb">The first multibody dynamics app for iOS and Android</p>
-
-
-
-
-
-
-<h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="mechanism.html">Mechanism Module</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id1">Classic Interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id2">Joints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mechanism.html#id3">Bodies</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="mechanism.html#id4">Loads</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="mechanism.html">Mechanism Module</a><ul>
-      <li>Previous: <a href="bodies/rigid_body_cylinder.html" title="previous chapter">Rigid Body Cylinder</a></li>
-      <li>Next: <a href="loads/external_force.html" title="next chapter">External Force</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Eliott Radcliffe.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/loads.rst.txt"
-          rel="nofollow">Page source</a>
+                    </div>
+                    <div class="footer">
+                        <hr/>
+                        
+                            &copy;2020, Eliott Radcliffe.<br/>
+                            Powered by <a href="https://www.sphinx-doc.org/">Sphinx 3.3.1</a> &amp;
+                            <a href="https://github.com/m-alzam/sphinx_theme_material">
+                                Material theme 1.1.2
+                            </a>
+                        
+                    </div>
+                        </div>
+                </div>
+        </main>
     </div>
 
-    
 
-    
-  </body>
+</body>
 </html>

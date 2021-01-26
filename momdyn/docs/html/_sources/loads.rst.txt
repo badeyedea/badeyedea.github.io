@@ -16,32 +16,27 @@ Loads
 Loads are the forces and moments that are exerted on points and frames in the model, respectively.
 
 
-`External Force <loads/external_force.html>`_
----------------------------------------------
+*`External Force <loads/external_force.html>`_*
 
 An external force acts on a single point, with vector components x, y, and z defined in the reference frame.
 
 
-`Actuated Force <loads/actuated_force.html>`_
-----------------------------------------------
+*`Actuated Force <loads/actuated_force.html>`_*
 
 An actuated force acts with equal and opposite magnitude on two points, with vector components x, y, and z defined in the reference frame.
 
 
-`External Moment <loads/external_moment.html>`_
------------------------------------------------
+*`External Moment <loads/external_moment.html>`_*
 
 An external moment acts on a single frame, about a vector with components x, y, and z defined in the reference frame.
 
 
-`Actuated Moment <loads/actuated_moment.html>`_
------------------------------------------------
+*`Actuated Moment <loads/actuated_moment.html>`_*
 
 An actuated moment acts with equal and opposite magnitude on two frames, about a vector with components x, y, and z defined in the reference frame.
 
 
-`Translational Spring <loads/translational_spring.html>`_
----------------------------------------------------------
+*`Translational Spring <loads/translational_spring.html>`_*
 
 A translational spring/damper induces an attractive force between two points that is colinear with a vector drawn from the start to end point. The force magnitude is
 
@@ -50,8 +45,7 @@ A translational spring/damper induces an attractive force between two points tha
 where k is the spring stiffness, x is the distance between the two points, e is an equilibrium length of the spring, c is the damping constant, and x' is the differential speed between the two points.
 
 
-`Rotational Spring <loads/rotational_spring.html>`_
----------------------------------------------------
+*`Rotational Spring <loads/rotational_spring.html>`_*
 
 A rotational spring/damper induces an attractive moment between two frames about the rotation axis corresponding to the relative orientation of the frames. The moment magnitude is
 
