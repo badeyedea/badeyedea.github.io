@@ -185,17 +185,6 @@
         </label>
         <div class="section" id="classic">
 <h1>Classic<a class="headerlink" href="#classic" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Classic Types:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classic/parameter.html">Parameter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classic/generalized_coordinate.html">Generalized Coordinate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classic/generalized_speed.html">Generalized Speed</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classic/frame.html">Frame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classic/vector.html">Vector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classic/point.html">Point</a></li>
-</ul>
-</div>
 <p>The classic interface implements several fundamental components for defining kinematics, largely based on the physics and classical mechanics modules in SymPy. A few of the objects that are used in MOMDYN are:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.sympy.org/latest/modules/core.html#module-sympy.core.symbol">symbols</a></p></li>
@@ -209,25 +198,36 @@
 <li><p><a class="reference external" href="https://docs.sympy.org/latest/modules/physics/mechanics/kane.html">KanesMethod</a></p></li>
 </ul>
 <p>MOMDYN provides a front-end interface for interacting with these data types, creating a “Mechanism” object that acts as a container for the various types, and uses them to generate bodies and loads. These are passed to the KanesMethod object to generate equations of motion, simulated using custom numerical algorithms, and reported in text and plot form. The following components are implemented in the classic interface:</p>
-<p><em>`Parameter &lt;classic/parameter.html&gt;`_</em></p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Classic Types:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classic/parameter.html">Parameter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classic/generalized_coordinate.html">Generalized Coordinate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classic/generalized_speed.html">Generalized Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classic/frame.html">Frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classic/vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classic/point.html">Point</a></li>
+</ul>
+</div>
+<hr/><p><a class="reference external" href="classic/parameter.html">Parameter</a></p>
 <p>Front-end for SymPy <cite>symbols</cite> type</p>
 <p>A parameter is a symbolic variable used to represent constants in the model. Typical uses are fixed lengths or angles in vector or frame definitions, mass properties, or spring stiffness and damping.</p>
-<p><em>`Generalized Coordinate &lt;classic/generalized_coordinate.html&gt;`_</em></p>
+<hr/><p><a class="reference external" href="classic/generalized_coordinate.html">Generalized Coordinate</a></p>
 <p>Front-end for SymPy <cite>dynamicsymbols</cite> type</p>
 <p>A generalized coordinate is a symbolic variable representing the mechanism configuration, typically as either a length or angular dimension. It is time-varying, and is alternately termed a degree of freedom. When using the classic interface, the generalized coordinate dialog is used to create the symbolic variable, which is later selected in the frame or vector dialogs as a dimension.</p>
-<p><em>`Generalized Speed &lt;classic/generalized_speed.html&gt;`_</em></p>
+<hr/><p><a class="reference external" href="classic/generalized_speed.html">Generalized Speed</a></p>
 <p>Front-end for SymPy <cite>dynamicsymbols</cite> type</p>
 <p>A generalized speed is a symbolic variable representing the mechanism motion. It is common to equate a generalized speed to the first derivative of a corresponding generalized speed with respect to time, however, this is not required. In fact, a more compact form of equations of motion are often obtained by using an alternate set of generalized speeds, for example, in free motion of a rigid body it is common to define generalized coordinates as positions relative to the origin in the inertial frame, with generalized speeds being the velocity components in the body-fixed frame.</p>
-<p><em>`Frame &lt;classic/frame.html&gt;`_</em></p>
+<hr/><p><a class="reference external" href="classic/frame.html">Frame</a></p>
 <p>Front-end for SymPy <cite>ReferenceFrame</cite> type</p>
 <p>A reference frame is a set of three orthonormal basis vectors which are rotated relative to the inertial frame, or some intermediate frame.</p>
-<p><em>`Vector &lt;classic/vector.html&gt;`_</em></p>
+<hr/><p><a class="reference external" href="classic/vector.html">Vector</a></p>
 <p>Front-end for SymPy <cite>Vector</cite> type</p>
 <p>Create a vector using an existing reference frame and specified distances.</p>
-<p><em>`Point &lt;classic/point.html&gt;`_</em></p>
+<hr/><p><a class="reference external" href="classic/point.html">Point</a></p>
 <p>Front-end for SymPy <cite>Point</cite> type</p>
 <p>A point has a location, velocity, and acceleration relative to the inertial reference frame. Points are used to define interfaces between multiple parts in the mechanism, to position bodies (masses and inertias), or as locations of applied forces.</p>
-</div>
+<hr/></div>
 
       </article>
       <footer>

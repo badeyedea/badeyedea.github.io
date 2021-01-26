@@ -1,6 +1,11 @@
 Mechanism Module
 ================
 
+.. raw:: html
+
+   <hr>
+
+
 `Classic Interface <classic.html>`_
 
 The classic interface implements several fundamental components for defining kinematics, largely based on the physics and classical mechanics modules in SymPy.
@@ -10,6 +15,10 @@ The classic interface implements several fundamental components for defining kin
    :caption: Classic Types:
 
    classic
+
+.. raw:: html
+
+   <hr>
 
 
 `Joints <joints.html>`_
@@ -22,6 +31,10 @@ Mechanical joints are typical of modern multibody software, and combine attribut
 
    joints
 
+.. raw:: html
+
+   <hr>
+
 
 `Bodies <bodies.html>`_
 
@@ -32,6 +45,10 @@ Bodies are used to define the mass and inertial properties of the model. The mos
    :caption: Body Types:
 
    bodies
+
+.. raw:: html
+
+   <hr>
 
 
 `Loads <loads.html>`_

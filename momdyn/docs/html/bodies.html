@@ -94,7 +94,7 @@
       <a href="index.html"><div class="brand">momdyn 1.4.1 documentation</div></a>
     </div>
     <div class="header-right">
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
@@ -180,11 +180,12 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
         <div class="section" id="bodies">
 <h1>Bodies<a class="headerlink" href="#bodies" title="Permalink to this headline">¶</a></h1>
+<p>Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass defined at the body’s mass-center, and inertia tensors dependent on the body geometry.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Body Types:</span></p>
 <ul>
@@ -195,28 +196,17 @@
 <li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
 </ul>
 </div>
-<p>Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass defined at the body’s mass-center, and inertia tensors dependent on the body geometry.</p>
-<div class="section" id="id1">
-<h2><a class="reference external" href="bodies/particle.html">Particle</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<hr/><p><a class="reference external" href="bodies/particle.html">Particle</a></p>
 <p>A particle is a mass that is fixed to a point, with no inertia tensor.</p>
-</div>
-<div class="section" id="id2">
-<h2><a class="reference external" href="bodies/general_rigid_body.html">General Rigid Body</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<hr/><p><a class="reference external" href="bodies/general_rigid_body.html">General Rigid Body</a></p>
 <p>A general rigid body has its center of gravity (CG) located at a user-specified point and orientation defined in a specified frame, a fixed mass, and specified inertia tensor.</p>
-</div>
-<div class="section" id="id3">
-<h2><a class="reference external" href="bodies/rigid_body_box.html">Rigid Body Box</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<hr/><p><a class="reference external" href="bodies/rigid_body_box.html">Rigid Body Box</a></p>
 <p>A rigid body box is a rectangular prism of uniform density. The box has length defined in the X-axis, width defined in the Y-axis, and height defined in the Z-axis, where (X, Y, Z) are the basis vectors of the body fixed frame.</p>
-</div>
-<div class="section" id="id4">
-<h2><a class="reference external" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<hr/><p><a class="reference external" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></p>
 <p>A rigid body cylinder is a circular rod of uniform density. The cylinder has length defined in the X-axis, and radius for the Y- anc Z-axes, where (X, Y, Z) are the basis vectors of the body fixed frame.</p>
-</div>
-<div class="section" id="id5">
-<h2><a class="reference external" href="bodies/rigid_body_cone.html">Rigid Body Cone</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<hr/><p><a class="reference external" href="bodies/rigid_body_cone.html">Rigid Body Cone</a></p>
 <p>A rigid body cone is a circular cone of uniform density. The cone has length defined in the X-axis, and radius for the Y- anc Z-axes, where (X, Y, Z) are the basis vectors of the body fixed frame.</p>
-</div>
-</div>
+<hr/></div>
 
       </article>
       <footer>
@@ -260,31 +250,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            Contents
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Bodies</a><ul>
-<li><a class="reference internal" href="#id1">Particle</a></li>
-<li><a class="reference internal" href="#id2">General Rigid Body</a></li>
-<li><a class="reference internal" href="#id3">Rigid Body Box</a></li>
-<li><a class="reference internal" href="#id4">Rigid Body Cylinder</a></li>
-<li><a class="reference internal" href="#id5">Rigid Body Cone</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
