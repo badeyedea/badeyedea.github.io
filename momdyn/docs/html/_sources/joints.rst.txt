@@ -24,6 +24,10 @@ Mechanical joints are typical of modern multibody software, and combine attribut
 
 `Rigid Translation <joints/rigid_translation.html>`_
 
+.. image:: img/rigidtranslation.jpg
+   :width: 128
+   :alt: Depiction of a rigid translation
+
 A rigid translation creates a point that is translated relative to an existing point with vector components defined in a specified reference frame. The rigid translation is analogous to creating a vector and point using the classic interface.
 
 .. raw:: html
@@ -32,6 +36,10 @@ A rigid translation creates a point that is translated relative to an existing p
 
 
 `Rigid Rotation <joints/rigid_rotation.html>`_
+
+.. image:: img/rigidrotation.jpg
+   :width: 128
+   :alt: Depiction of a rigid translation
 
 A rigid rotation creates a frame that is oriented relative to an existing frame by a Euler angle sequence.
 
