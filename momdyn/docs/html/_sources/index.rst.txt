@@ -6,6 +6,10 @@
 Mobile Multibody Dynamics
 =========================
 
+.. image:: img/icon_drubble.png
+   :width: 400
+
+
 Mobile Multibody Dynamics (MOMDYN) is the first multibody dynamics app for iOS and Android. MOMDYN provides an easy to use graphical interface that is familiar to engineers and physicists who have studied classical mechanics, with a limited but powerful set of features similar to modern modeling and simulation software. The software forms a bridge between the"first-principles" approach to dynamics problem solving where one defines kinematic and dynamic equations by hand before developing custom code for each individual system, and the modern approach where the fundamental mathematical equations are obfuscated behind a purely graphical, computer aided design (CAD)-like interface.
 
 .. raw:: html

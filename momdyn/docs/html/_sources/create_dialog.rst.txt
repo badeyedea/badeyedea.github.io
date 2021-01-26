@@ -8,8 +8,7 @@ Settings Dialog
 
 From the diagram view, tap the edit button in the lower right. The edit menu will scroll up from the bottom of the screen, tap the settings button in the lower right to open the settings dialog, with values from your current working model. After editing settings, press the check mark in the lower right to return to the diagram view.
 
-Properties
-----------
+**Keyword Arguments**
 
 **model_name: string, 'New Model'**
 
