@@ -38,6 +38,8 @@ The primary screen for interacting with the model, including updating settings, 
    on_screen_controls
    menu_dialog
    save
+   tutorials/pendulum
+   tutorials/oscillator
 
 
 Report View
