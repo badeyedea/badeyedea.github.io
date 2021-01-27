@@ -39,7 +39,7 @@ A rigid translation creates a point that is translated relative to an existing p
 
 .. image:: img/rigidrotation.jpg
    :width: 128
-   :alt: Depiction of a rigid translation
+   :alt: Depiction of a rigid rotation
 
 A rigid rotation creates a frame that is oriented relative to an existing frame by a Euler angle sequence.
 
@@ -50,7 +50,9 @@ A rigid rotation creates a frame that is oriented relative to an existing frame 
 
 `Prismatic Joint <joints/prismatic.html>`_
 
-Front-end for SymPy `symbols`, `dynamicsymbols`, `Vector` and `Point` types
+.. image:: img/prismatic.jpg
+   :width: 128
+   :alt: Depiction of a prismatic joint
 
 A prismatic joint creates a point that is translated relative to an existing point with vector components defined in a specified reference frame. The joint is analogous to creating a vector and point using the classic interface. The vector component can be constant valued, or a degree of freedom (DOF) may be generated where the point can translate in the unit vector direction. If the DOF form is chosen, then an optional linear stiffness, damping, and equilibrium distance can be used to include translational spring-damper physics in the joint.
 
@@ -61,7 +63,9 @@ A prismatic joint creates a point that is translated relative to an existing poi
 
 `Revolute Joint <joints/revolute.html>`_
 
-Front-end for SymPy `symbols`, `dynamicsymbols`, and `Frame` types
+.. image:: img/revolute.jpg
+   :width: 128
+   :alt: Depiction of a revolute joint
 
 A revolute joint creates a frame that is rotated relative to an existing frame about an axis defined in a specified reference frame. The angular component can be constant valued, or a degree of freedom (DOF) may be generated. If the DOF form is chosen, then an optional rotational stiffness, damping, and equilibrium angle can be used to include rotational spring-damper physics in the joint.
 
@@ -72,6 +76,10 @@ A revolute joint creates a frame that is rotated relative to an existing frame a
 
 `Cylindrical Joint <joints/cylindrical.html>`_
 
+.. image:: img/cylindrical.jpg
+   :width: 128
+   :alt: Depiction of a cylindrical joint
+
 A cylindrical joint creates a point that is translated along an axis defined in the reference frame, and a frame that is rotated relative to an existing frame about the same axis.
 
 .. raw:: html
@@ -80,6 +88,10 @@ A cylindrical joint creates a point that is translated along an axis defined in 
 
 
 `Universal Joint <joints/universal.html>`_
+
+.. image:: img/universal.jpg
+   :width: 128
+   :alt: Depiction of a universal joint
 
 A universal joint creates a frame that is rotated relative to an existing frame using a two angles to define its orientation.
 
@@ -90,6 +102,10 @@ A universal joint creates a frame that is rotated relative to an existing frame 
 
 `Spherical Joint <joints/spherical.html>`_
 
+.. image:: img/spherical.jpg
+   :width: 128
+   :alt: Depiction of a spherical joint
+
 A spherical joint creates a frame that is rotated relative to an existing frame using a quaternion to define its orientation. Initial quaternion values are defined using an equivalent Euler angle sequence. The components can be constant valued, or a three degrees of freedom (DOF) form may be generated.
 
 .. raw:: html
@@ -99,7 +115,9 @@ A spherical joint creates a frame that is rotated relative to an existing frame 
 
 `Planar Joint <joints/planar.html>`_
 
-Front-end for SymPy `symbols`, `dynamicsymbols`, `Frame`, and `Point` types
+.. image:: img/planar.jpg
+   :width: 128
+   :alt: Depiction of a planar joint
 
 A planar joint creates a point that is translated by two components coordinates defined in the reference frame, and a frame that is rotated relative to an existing frame about an axis that is normal to the two components. The components can be constant valued, or a three degrees of freedom (DOF) form may be generated. If the DOF form is chosen, then optional stiffness, damping, and equilibrium coefficients can be used to include translational and rotational spring-damper physics in the joint.
 
@@ -110,7 +128,9 @@ A planar joint creates a point that is translated by two components coordinates 
 
 `Free Motion Joint <joints/free_motion.html>`_
 
-Front-end for SymPy `symbols`, `dynamicsymbols`, `Frame`, and `Point` types
+.. image:: img/freemotion.jpg
+   :width: 128
+   :alt: Depiction of a free motion joint
 
 A free motion joint creates a point that is translated by three components coordinates defined in the reference frame, and a frame that is rotated relative to an existing frame using a quaternion to define its orientation. Initial quaternion values are defined using an equivalent Euler angle sequence. The components can be constant valued, or a six degrees of freedom (DOF) form may be generated. If the DOF form is chosen, then optional stiffness, damping, and equilibrium coefficients can be used to include translational and rotational spring-damper physics in the joint.
 
