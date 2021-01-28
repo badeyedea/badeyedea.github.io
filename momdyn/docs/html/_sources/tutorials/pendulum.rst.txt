@@ -27,8 +27,24 @@ software, where lower-level modeling attributes are consolidated into the joint 
 steps.
 
 
+.. raw:: html
+
+   <hr>
+
 Create the New Model
 --------------------
+
+.. image:: pendulum/01-1.jpg
+   :width: 128
+   :alt: Welcome screen
+
+.. image:: pendulum/01-2.png
+   :width: 128
+   :alt: Create screen
+
+.. image:: pendulum/01-3.png
+   :width: 128
+   :alt: Create screen, bottom
 
 To begin, from the welcome screen tap the "Create" button, which will bring up a dialog with the title
 "Create - Specify Settings." Many of the settings in this dialog can remain with their defaults. The modified
@@ -47,6 +63,9 @@ following:
 Tap the green check in the lower right, which will bring up a blank diagram. Tap the save button, as we will be
 returning to this stage later in the tutorial.
 
+.. raw:: html
+
+   <hr>
 
 Classic Interface
 =================
@@ -57,8 +76,24 @@ building block components into common mechanical joints, and doesn't require ind
 reference frames, vectors, and points in the model. If you are interested in using the joints interface, you may skip
 steps (3a) through (7a) below, and proceed to step (3b).
 
+.. raw:: html
+
+   <hr>
+
 Create Symbols
 --------------
+
+.. image:: pendulum/02a-1.jpg
+   :width: 128
+   :alt: Diagram view, prior to creating symbols
+
+.. image:: pendulum/02a-2.jpg
+   :width: 128
+   :alt: Edit menu
+
+.. image:: pendulum/02a-3.jpg
+   :width: 128
+   :alt: New parameter
 
 Tap the edit button (three horizontal bars) in the upper left to bring up the edit menu. We will first create the
 pendulum using the classic interface. Expand the classic panel, and tap the plus sign on the parameter line, which will
@@ -71,6 +106,18 @@ bring up the new parameter dialog. Create a constant for pendulum length with th
 
 then tap the green plus sign after entering the values for each parameter to create it.
 
+.. raw:: html
+
+   <hr>
+
+.. image:: pendulum/03a-1.jpg
+   :width: 128
+   :alt: Edit menu
+
+.. image:: pendulum/03a-2.jpg
+   :width: 128
+   :alt: New generalized coordinate
+
 Next create the generalized coordinate, *θ*, corresponding to the angular degree of freedom. With the classic panel
 open, tap the plus sign to the left of generalized coordinate, and enter the following specifications
 
@@ -81,8 +128,24 @@ open, tap the plus sign to the left of generalized coordinate, and enter the fol
 
 noting that when \theta is entered as the name, it will be replaced by the unicode character θ.
 
+.. raw:: html
+
+   <hr>
+
 Kinematics
 ----------
+
+.. image:: pendulum/04a-1.jpg
+   :width: 128
+   :alt: Edit menu
+
+.. image:: pendulum/04a-2.jpg
+   :width: 128
+   :alt: New frame
+
+.. image:: pendulum/04a-3.jpg
+   :width: 128
+   :alt: Created frame in the diagram view
 
 Once again, with the classic panel open, tap the plus sign to the left of frame, and enter the following (noting that
 line items that are not listed below can retain their default values)
@@ -91,7 +154,25 @@ line items that are not listed below can retain their default values)
   - *first_angle*: θ(t)
 
 tap the green check button to create the frame. This will create the new frame rotated by the angle *θ* measured about
-the out of plane axis **k**. Next, tap the plus sign to the left of vector, and enter the following
+the out of plane axis **k**.
+
+.. raw:: html
+
+   <hr>
+
+.. image:: pendulum/05a-1.jpg
+   :width: 128
+   :alt: Edit menu
+
+.. image:: pendulum/05a-2.png
+   :width: 128
+   :alt: New vector
+
+.. image:: pendulum/05a-3.png
+   :width: 128
+   :alt: Created vector in the diagram view
+
+Next, tap the plus sign to the left of vector, and enter the following
 
 **(5a) New Vector**
   - *name*: r
@@ -99,7 +180,25 @@ the out of plane axis **k**. Next, tap the plus sign to the left of vector, and 
   - *x*: l
 
 and tap the green check button to create the vector named **r**, aligned with the **e**\ :sub:`x` \ axis of the rotated
-frame, with constant length *l*. Finally, tap the plus sign to the left of point, and enter the following
+frame, with constant length *l*.
+
+.. raw:: html
+
+   <hr>
+
+.. image:: pendulum/06a-1.jpg
+   :width: 128
+   :alt: Edit menu
+
+.. image:: pendulum/06a-2.png
+   :width: 128
+   :alt: New point
+
+.. image:: pendulum/06a-3.png
+   :width: 128
+   :alt: Created point in the diagram view
+
+Finally, tap the plus sign to the left of point, and enter the following
 
 **(6a) New Point**
   - vector_key: r
@@ -107,6 +206,9 @@ frame, with constant length *l*. Finally, tap the plus sign to the left of point
 and tap the green check button to create the point a at the end of the vector *r*. Minimize the edit menu by tapping
 the three horizontal lines, at which point you should see the diagram updated to include the frame, vector, and point.
 
+.. raw:: html
+
+   <hr>
 
 Joints Interface
 ================
