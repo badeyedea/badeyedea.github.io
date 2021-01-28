@@ -48,54 +48,6 @@ that you set up on your device, and can be executed in a Python environment usin
 Want phase plots, frequency spectra, or to integrate your mechanism model with another physical or control system? If
 you can code it, you can do it.
 
-.. raw:: html
-
-   <hr>
-
-Technical Specifications
-========================
-
-Mechanism Module
-----------------
-
-The analytical back-end of MOMDYN, referred to here as the "Mechanism module," is implemented using Python, taking very basic data classes (numeric and string) as user inputs to numerous high-level, object-oriented methods.
-
-*Numeric and string input definition*
-
-The mobile implementation requires simplification of the user input commensurate with the limited interaction capability provided by a mobile device compared to a desktop workstation. Many high-level methods available in open source software have been re-structured in MOMDYN such that their inputs can be defined using only numeric and string variables.
-
-*New/edit/delete methods*
-
-Each object implemented in the Mechanism module has a "new," "edit," and "delete" method.
-
-*Embedded documentation*
-
-Each object implemented in the Mechanism module has documentation that can be accessed from the front-end interface.
-
-*Equation of motion generation*
-
-Once the kinematic and dynamic relations are defined in the Mechanism module, equations relating the generalized coordinates to generalized speeds, equilibrium conditions, mass and forcing matrix are automatically derived. These can be displayed in the front-end, or exported to human-readable source code or typeset reports.
-
-*Simulation*
-
-Commonly used open-source numerical integration algorithms necessary for simulation of dynamic systems have been implemented in architectures that cannot be compiled on mobile device. MOMDYN includes a custom simulation routine that can be built on all devices.
-
-*Automated code generation*
-
-Complex dynamics models created in MOMDYN require interactivity with desktop workstations or high performance computing systems to execute fast and/or high volume analysis. The Mechanism module provides an interface to automatically generate human-readable source code in C, Python, or MATLAB formats that can be transferred to these systems.
-
-.. *Common file formats*
-
-.. An analyst may initially begin creating their model in MOMDYN, before transitioning to a desktop software application. The Mechanism module can export the constituent objects to standard data file formats that can be subsequently imported into these alternate applications.
-
-.. *Professional document generation*
-
-.. Text and images describing the model are automatically generated and may be exported into a LaTeX formatted file. This may be compiled into a form suitable for academic publication or corporate reports.
-
-.. toctree::
-   :maxdepth: 2
-
-   mechanism
 
 .. raw:: html
 
@@ -104,25 +56,101 @@ Complex dynamics models created in MOMDYN require interactivity with desktop wor
 User Interface
 ==============
 
-The graphical front-end of MOMDYN, referred to here as the "Touch interface," is the means for the user to interact with and visualize elements of the Mechanism module.
-
-Welcome screen
---------------
-
-The first screen you will see when opening the app, the welcome screen presents you with the option to create a new model, import an existing model, or to view help documentation or tutorials.
-
-Diagram view
-------------
-
-The modeling components are by default displayed in a schematic representation similar to academic textbooks used in teaching advanced dynamics courses. A 3-D environment may also be chosen where components are shown as primitive solids. The diagram view is also the primary interface for the user to create and edit modeling components, and initiate equation generation and simulation routines.
-
-Report view
------------
-
-A preview of the professional documentation is shown. Tabbed controls allow the user to flip between sections of the document, with separate tabs for constants, generalized coordinates, generalized speeds, frames, vectors, points, bodies, loads, equations of motion, and plots.
-
+The graphical front-end of MOMDYN, referred to here as the "Touch interface," is the means for the user to interact
+with and visualize elements of the Mechanism module.
 
 .. toctree::
    :maxdepth: 2
 
    getting_started
+
+
+Welcome screen
+--------------
+
+The first screen you will see when opening the app, the welcome screen presents you with the option to create a new
+model, import an existing model, or to view help documentation or tutorials.
+
+Diagram view
+------------
+
+The modeling components are by default displayed in a schematic representation similar to academic textbooks used in
+teaching advanced dynamics courses. A 3-D environment may also be chosen where components are shown as primitive
+solids. The diagram view is also the primary interface for the user to create and edit modeling components, and
+initiate equation generation and simulation routines.
+
+Report view
+-----------
+
+A preview of the professional documentation is shown. Tabbed controls allow the user to flip between sections of the
+document, with separate tabs for constants, generalized coordinates, generalized speeds, frames, vectors, points,
+bodies, loads, equations of motion, and plots.
+
+.. raw:: html
+
+   <hr>
+
+
+Technical Specifications
+========================
+
+Mechanism Module
+----------------
+
+The analytical back-end of MOMDYN, referred to here as the "Mechanism module," is implemented using Python, taking
+very basic data classes (numeric and string) as user inputs to numerous high-level, object-oriented methods.
+
+.. toctree::
+   :maxdepth: 2
+
+   mechanism
+
+Features
+--------
+
+Numeric and string input definition
++++++++++++++++++++++++++++++++++++
+
+The mobile implementation requires simplification of the user input commensurate with the limited interaction
+capability provided by a mobile device compared to a desktop workstation. Many high-level methods available in open
+source software have been re-structured in MOMDYN such that their inputs can be defined using only numeric and string
+variables.
+
+New/edit/delete methods
++++++++++++++++++++++++
+
+Each object implemented in the Mechanism module has a "new," "edit," and "delete" method.
+
+Embedded documentation
+++++++++++++++++++++++
+
+Each object implemented in the Mechanism module has documentation that can be accessed from the front-end interface.
+
+Equation of motion generation
++++++++++++++++++++++++++++++
+
+Once the kinematic and dynamic relations are defined in the Mechanism module, equations relating the generalized
+coordinates to generalized speeds, equilibrium conditions, mass and forcing matrix are automatically derived. These can
+be displayed in the front-end, or exported to human-readable source code or typeset reports.
+
+Simulation
+++++++++++
+
+Commonly used open-source numerical integration algorithms necessary for simulation of dynamic systems have been
+implemented in architectures that cannot be compiled on mobile device. MOMDYN includes a custom simulation routine that
+can be built on all devices.
+
+Automated code generation
++++++++++++++++++++++++++
+
+Complex dynamics models created in MOMDYN require interactivity with desktop workstations or high performance computing
+systems to execute fast and/or high volume analysis. The Mechanism module provides an interface to automatically
+generate human-readable source code in C, Python, or MATLAB formats that can be transferred to these systems.
+
+.. *Common file formats*
+
+.. An analyst may initially begin creating their model in MOMDYN, before transitioning to a desktop software application. The Mechanism module can export the constituent objects to standard data file formats that can be subsequently imported into these alternate applications.
+
+.. *Professional document generation*
+
+.. Text and images describing the model are automatically generated and may be exported into a LaTeX formatted file. This may be compiled into a form suitable for academic publication or corporate reports.

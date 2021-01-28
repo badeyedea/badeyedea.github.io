@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Classic" href="classic.html" /><link rel="prev" title="Mobile Multibody Dynamics" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Classic" href="classic.html" /><link rel="prev" title="Save and Import/Export" href="save.html" />
 
     <meta name="generator" content="sphinx-3.3.1, furo 2020.12.30.beta24"/>
         <title>Mechanism Module - momdyn 1.4.2 documentation</title>
@@ -94,7 +94,7 @@
       <a href="index.html"><div class="brand">momdyn 1.4.2 documentation</div></a>
     </div>
     <div class="header-right">
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
@@ -112,9 +112,25 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Mechanism Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Getting Started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/pendulum.html">Simple Pendulum Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/oscillator.html">Mass-Spring-Damper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menu_dialog.html">Menu Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save.html">Save and Import/Export</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Mechanism Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="classic/parameter.html">Parameter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="classic/generalized_coordinate.html">Generalized Coordinate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="classic/generalized_speed.html">Generalized Speed</a></li>
@@ -123,7 +139,7 @@
 <li class="toctree-l3"><a class="reference internal" href="classic/point.html">Point</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="joints/rigid_translation.html">Rigid Translation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="joints/rigid_rotation.html">Rigid Rotation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="joints/prismatic.html">Prismatic</a></li>
@@ -135,7 +151,7 @@
 <li class="toctree-l3"><a class="reference internal" href="joints/free_motion.html">Free Motion</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="bodies.html">Bodies</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="bodies.html">Bodies</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="bodies/particle.html">Particle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bodies/general_rigid_body.html">General Rigid Body</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_box.html">Rigid Body Box</a></li>
@@ -143,7 +159,7 @@
 <li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="loads/external_force.html">External Force</a></li>
 <li class="toctree-l3"><a class="reference internal" href="loads/actuated_force.html">Actuated Force</a></li>
 <li class="toctree-l3"><a class="reference internal" href="loads/external_moment.html">External Moment</a></li>
@@ -155,21 +171,6 @@
 </ul>
 </li>
 </ul>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Getting Started</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="menu_dialog.html">Menu Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="save.html">Save and Import/Export</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
-</ul>
 
 </div>
 </div>
@@ -180,15 +181,19 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
         <div class="section" id="mechanism-module">
 <h1>Mechanism Module<a class="headerlink" href="#mechanism-module" title="Permalink to this headline">¶</a></h1>
-<hr/><p><a class="reference external" href="classic.html">Classic Interface</a></p>
-<p>The classic interface implements several fundamental components for defining kinematics, largely based on the physics and classical mechanics modules in SymPy.</p>
+<p>The analytical back-end of MOMDYN, referred to here as the “Mechanism module,” is implemented using Python, taking
+very basic data classes (numeric and string) as user inputs to numerous high-level, object-oriented methods.</p>
+<hr/><div class="section" id="classic-interface">
+<h2>Classic Interface<a class="headerlink" href="#classic-interface" title="Permalink to this headline">¶</a></h2>
+<p>The classic interface implements several fundamental components for defining kinematics, largely based on the physics
+and classical mechanics modules in SymPy. These include constant and time-varying symbols, frames to model orientation,
+and vectors and points to model location.</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Classic Types:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="classic.html">Classic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="classic/parameter.html">Parameter</a></li>
@@ -201,10 +206,14 @@
 </li>
 </ul>
 </div>
-<hr/><p><a class="reference external" href="joints.html">Joints</a></p>
-<p>Mechanical joints are typical of modern multibody software, and combine attributes of the fundamental objects found in the classic interface. A good reference to common joint definitions may be found in the documentation for the open-source Modelica project, in the OpenModelica Mechanics Multibody package. While MOMDYN does not use Modelica  code, I will attempt to use similar terminology and input parameters where applicable.</p>
+<hr/></div>
+<div class="section" id="mechanical-joints">
+<h2>Mechanical Joints<a class="headerlink" href="#mechanical-joints" title="Permalink to this headline">¶</a></h2>
+<p>Mechanical joints are typical of modern multibody software, and combine attributes of the fundamental objects found in
+the classic interface. A good reference to common joint definitions may be found in the documentation for the
+open-source Modelica project, in the OpenModelica Mechanics Multibody package. While MOMDYN does not use Modelica
+code, I will attempt to use similar terminology and input parameters where applicable.</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Joint Types:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="joints.html">Joints</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="joints/rigid_translation.html">Rigid Translation</a></li>
@@ -220,10 +229,13 @@
 </li>
 </ul>
 </div>
-<hr/><p><a class="reference external" href="bodies.html">Bodies</a></p>
-<p>Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass defined at the body’s mass-center, and inertia tensors dependent on the body geometry.</p>
+<hr/></div>
+<div class="section" id="bodies">
+<h2>Bodies<a class="headerlink" href="#bodies" title="Permalink to this headline">¶</a></h2>
+<p>Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a
+mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass
+defined at the body’s mass-center, and inertia tensors dependent on the body geometry.</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Body Types:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bodies.html">Bodies</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bodies/particle.html">Particle</a></li>
@@ -235,10 +247,13 @@
 </li>
 </ul>
 </div>
-<hr/><p><a class="reference external" href="loads.html">Loads</a></p>
-<p>Loads are the forces and moments that are exerted on points and frames in the model, respectively.</p>
+<hr/></div>
+<div class="section" id="loads">
+<h2>Loads<a class="headerlink" href="#loads" title="Permalink to this headline">¶</a></h2>
+<p>Loads are the forces and moments that are exerted on points and frames in the model, respectively. These include
+external loads, which act on a single point or frame, or external loads that act with equal and opposite amounts on
+pairs of points or frames. Additionally, spring behavior can be implemented in translational and rotational forms.</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Load Types</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="loads.html">Loads</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="loads/external_force.html">External Force</a></li>
@@ -250,6 +265,7 @@
 </ul>
 </li>
 </ul>
+</div>
 </div>
 </div>
 
@@ -266,14 +282,14 @@
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="index.html">
+          <a class="prev-page" href="save.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">Save and Import/Export</div>
                 
               </div>
             </a>
@@ -295,8 +311,30 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Mechanism Module</a><ul>
+<li><a class="reference internal" href="#classic-interface">Classic Interface</a></li>
+<li><a class="reference internal" href="#mechanical-joints">Mechanical Joints</a></li>
+<li><a class="reference internal" href="#bodies">Bodies</a></li>
+<li><a class="reference internal" href="#loads">Loads</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
