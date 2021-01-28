@@ -35,15 +35,15 @@ Create the New Model
 --------------------
 
 .. image:: pendulum/01-1.jpg
-   :width: 72
+   :width: 84
    :alt: Welcome screen
 
 .. image:: pendulum/01-2.png
-   :width: 72
+   :width: 84
    :alt: Create screen
 
 .. image:: pendulum/01-3.png
-   :width: 72
+   :width: 84
    :alt: Create screen, bottom
 
 To begin, from the welcome screen tap the "Create" button, which will bring up a dialog with the title
@@ -84,15 +84,15 @@ Create Symbols
 --------------
 
 .. image:: pendulum/02a-1.jpg
-   :width: 72
+   :width: 84
    :alt: Diagram view, prior to creating symbols
 
 .. image:: pendulum/02a-2.jpg
-   :width: 72
+   :width: 84
    :alt: Edit menu
 
 .. image:: pendulum/02a-3.jpg
-   :width: 72
+   :width: 84
    :alt: New parameter
 
 Tap the edit button (three horizontal bars) in the upper left to bring up the edit menu. We will first create the
@@ -111,11 +111,11 @@ then tap the green plus sign after entering the values for each parameter to cre
    <hr>
 
 .. image:: pendulum/03a-1.jpg
-   :width: 72
+   :width: 84
    :alt: Edit menu
 
 .. image:: pendulum/03a-2.jpg
-   :width: 72
+   :width: 84
    :alt: New generalized coordinate
 
 Next create the generalized coordinate, *θ*, corresponding to the angular degree of freedom. With the classic panel
@@ -136,15 +136,15 @@ Kinematics
 ----------
 
 .. image:: pendulum/04a-1.jpg
-   :width: 72
+   :width: 84
    :alt: Edit menu
 
 .. image:: pendulum/04a-2.jpg
-   :width: 72
+   :width: 84
    :alt: New frame
 
 .. image:: pendulum/04a-3.jpg
-   :width: 72
+   :width: 84
    :alt: Created frame in the diagram view
 
 Once again, with the classic panel open, tap the plus sign to the left of frame, and enter the following (noting that
@@ -161,15 +161,15 @@ the out of plane axis **k**.
    <hr>
 
 .. image:: pendulum/05a-1.jpg
-   :width: 72
+   :width: 84
    :alt: Edit menu
 
 .. image:: pendulum/05a-2.png
-   :width: 72
+   :width: 84
    :alt: New vector
 
 .. image:: pendulum/05a-3.png
-   :width: 72
+   :width: 84
    :alt: Created vector in the diagram view
 
 Next, tap the plus sign to the left of vector, and enter the following
@@ -187,15 +187,15 @@ frame, with constant length *l*.
    <hr>
 
 .. image:: pendulum/06a-1.jpg
-   :width: 72
+   :width: 84
    :alt: Edit menu
 
 .. image:: pendulum/06a-2.png
-   :width: 72
+   :width: 84
    :alt: New point
 
 .. image:: pendulum/06a-3.png
-   :width: 72
+   :width: 84
    :alt: Created point in the diagram view
 
 Finally, tap the plus sign to the left of point, and enter the following
