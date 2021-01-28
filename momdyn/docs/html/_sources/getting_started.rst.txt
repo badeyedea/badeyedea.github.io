@@ -1,5 +1,5 @@
-Getting Started
-===============
+User Interface
+==============
 
 Welcome to the help documentation for MOMDYN. This page gives an overview of the three screens utilized in the app. Scroll down to the bottom for a table of contents with links to detailed help topics.
 

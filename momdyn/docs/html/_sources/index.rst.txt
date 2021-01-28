@@ -126,6 +126,3 @@ A preview of the professional documentation is shown. Tabbed controls allow the 
    :maxdepth: 2
 
    getting_started
-   create_dialog
-   import_dialog
-   on_screen_controls
