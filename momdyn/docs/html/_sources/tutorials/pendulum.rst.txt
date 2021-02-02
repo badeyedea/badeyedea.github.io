@@ -1,5 +1,5 @@
-Simple Pendulum Tutorial
-########################
+Simple Pendulum
+###############
 
 Introduction
 ============
@@ -80,8 +80,8 @@ steps (3a) through (7a) below, and proceed to step (3b).
 
    <hr>
 
-Create Symbols
---------------
+Symbols
+-------
 
 .. image:: pendulum/02a-1.jpg
    :width: 108
@@ -213,7 +213,22 @@ the three horizontal lines, at which point you should see the diagram updated to
 Joints Interface
 ================
 
-Tap on the welcome tab on the bottom of the screen, then the import button, and select the saved user.Pendulum file,
+Angular Degree of Freedom
+-------------------------
+
+.. image:: pendulum/02b-1.jpg
+   :width: 108
+   :alt: Joints menu
+
+.. image:: pendulum/02b-2.png
+   :width: 108
+   :alt: New revolute
+
+.. image:: pendulum/02b-3.png
+   :width: 108
+   :alt: Created revolute joint in the diagram view
+
+Tap on the welcome tab on the bottom of the screen, then the import button, and select the saved `user.Pendulum` file,
 which will return the model to its state after step (1). Open the edit menu, and expand the joints panel, then tap the
 plus sign to the left of revolute. Add the following specifications, leaving line items that are unlisted at their
 default value,
@@ -225,8 +240,28 @@ default value,
 
 and then tap the green check button to create the joint. This will create a new frame rotated about the out-of-plane
 **k** axis by an angle θ\ :sub:`E` \, similar to the output of step (5a). Notably, the creation of the generalized
-coordinate is combined with the generation of a reference frame in a single joint object. Next, tap the plus sign to
-the left of rigid translation, and add the following specifications
+coordinate is combined with the generation of a reference frame in a single joint object.
+
+.. raw:: html
+
+   <hr>
+
+Rigid, Massless Beam
+--------------------
+
+.. image:: pendulum/03b-1.jpg
+   :width: 108
+   :alt: Joints menu
+
+.. image:: pendulum/03b-2.png
+   :width: 108
+   :alt: New rigid translation
+
+.. image:: pendulum/03b-3.png
+   :width: 108
+   :alt: Created rigid translation in the diagram view
+
+Next, tap the plus sign to the left of rigid translation, and add the following specifications
 
 **(3b) New Rigid Translation**
   - *ref_frame_key*: E
@@ -236,12 +271,23 @@ once again tapping the green check button to create the joint. This will create 
 **e**\ :sub:`x`\ axis with length 1, and a new point *a*, similar to the output of step (7a). Thus, in this example,
 the same kinematics definition requiring 5 steps using the classic interface, is completed using two joints.
 
+.. raw:: html
+
+   <hr>
 
 Bodies
 ======
 
-Create Mass Symbol
-------------------
+Mass Symbol
+-----------
+
+.. image:: pendulum/07-1.jpg
+   :width: 108
+   :alt: Classic menu
+
+.. image:: pendulum/07-2.png
+   :width: 108
+   :alt: New parameter
 
 Reopen the edit menu, expand the classic panel, and create a constant for pendulum mass with the following
 specifications
@@ -251,8 +297,24 @@ specifications
   - *value*: 1
   - *description*: mass
 
-Create Point Mass
------------------
+.. raw:: html
+
+   <hr>
+
+Point Mass
+----------
+
+.. image:: pendulum/08-1.jpg
+   :width: 108
+   :alt: Bodies menu
+
+.. image:: pendulum/08-2.png
+   :width: 108
+   :alt: New particle
+
+.. image:: pendulum/08-3.png
+   :width: 108
+   :alt: Created particle in the diagram view
 
 Expand the bodies panel. Tap on the plus sign to the left of particle, and enter the following.
 
@@ -263,6 +325,9 @@ Expand the bodies panel. Tap on the plus sign to the left of particle, and enter
 
 which will create the pendulum bob with mass m attached to the point a, as shown below.
 
+.. raw:: html
+
+   <hr>
 
 Analysis
 ========
@@ -276,6 +341,10 @@ play button. Tap again to run the simulation, once again this will be nearly ins
 animation, which will show the pendulum swinging from right to left with around a 3 second period, as seen previously
 at the top of this page.
 
+.. raw:: html
+
+   <hr>
+
 Model Export
 ------------
 
@@ -286,6 +355,10 @@ Simulation file (simulation.csv) are the time-series reflecting the generalized 
 animated. The Python file (py_model.py) contains code that can be executed and further manipulated on a desktop Python
 environment.
 
+.. raw:: html
+
+   <hr>
+
 Report
 ------
 
@@ -293,3 +366,27 @@ Tap on the report tab in the lower right to open up the report view showing text
 the top specify which section of the report to view. From left to right these are symbols, frames, points, bodies,
 loads, equations, and plots. The images below show these sections for the Pendulum model, omitting loads as there are
 none (except for gravity).
+
+.. image:: pendulum/report-symbols.png
+   :width: 108
+   :alt: Symbols in the report view
+
+.. image:: pendulum/report-frames.png
+   :width: 108
+   :alt: Frames in the report view
+
+.. image:: pendulum/report-points.png
+   :width: 108
+   :alt: Points in the report view
+
+.. image:: pendulum/report-bodies.png
+   :width: 108
+   :alt: Bodies in the report view
+
+.. image:: pendulum/report-equations.png
+   :width: 108
+   :alt: Equations in the report view
+
+.. image:: pendulum/report-plots.png
+   :width: 108
+   :alt: Plots in the report view

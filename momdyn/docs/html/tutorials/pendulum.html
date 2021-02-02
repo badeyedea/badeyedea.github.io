@@ -1,10 +1,10 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Mass-Spring-Damper" href="oscillator.html" /><link rel="prev" title="Save and Import/Export" href="../save.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Mass-Spring-Damper" href="oscillator.html" /><link rel="prev" title="Tutorials" href="../tutorials.html" />
 
     <meta name="generator" content="sphinx-3.3.1, furo 2020.12.30.beta24"/>
-        <title>Simple Pendulum Tutorial - momdyn 1.4.2 documentation</title>
+        <title>Simple Pendulum - momdyn 1.4.2 documentation</title>
       <link rel="stylesheet" href="../_static/styles/furo.css?digest=33d2fc4f3f180ec1ffc6524e273e21d7d58cbe49">
     <link rel="stylesheet" href="../_static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css">
@@ -112,9 +112,25 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanism.html">Mechanism Module</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../getting_started.html">Getting Started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../tutorials.html">Tutorials</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Simple Pendulum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillator.html">Mass-Spring-Damper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../create_dialog.html">Create Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../create_dialog.html#settings-dialog">Settings Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../import_dialog.html">Import Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../on_screen_controls.html">On-Screen Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../menu_dialog.html">Menu Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../save.html">Save and Import/Export</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanism.html">Mechanism Module</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../classic/parameter.html">Parameter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../classic/generalized_coordinate.html">Generalized Coordinate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../classic/generalized_speed.html">Generalized Speed</a></li>
@@ -123,7 +139,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../classic/point.html">Point</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../joints/rigid_translation.html">Rigid Translation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../joints/rigid_rotation.html">Rigid Rotation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../joints/prismatic.html">Prismatic</a></li>
@@ -135,7 +151,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../joints/free_motion.html">Free Motion</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../bodies.html">Bodies</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../bodies.html">Bodies</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../bodies/particle.html">Particle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bodies/general_rigid_body.html">General Rigid Body</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bodies/rigid_body_box.html">Rigid Body Box</a></li>
@@ -143,7 +159,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../loads/external_force.html">External Force</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../loads/actuated_force.html">Actuated Force</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../loads/external_moment.html">External Moment</a></li>
@@ -154,23 +170,6 @@
 </li>
 </ul>
 </li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../getting_started.html">Getting Started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../create_dialog.html">Create Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../create_dialog.html#settings-dialog">Settings Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../import_dialog.html">Import Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../on_screen_controls.html">On-Screen Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../menu_dialog.html">Menu Dialog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../save.html">Save and Import/Export</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Simple Pendulum Tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oscillator.html">Mass-Spring-Damper</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../create_dialog.html">Create Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../create_dialog.html#settings-dialog">Settings Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../import_dialog.html">Import Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../on_screen_controls.html">On-Screen Controls</a></li>
 </ul>
 
 </div>
@@ -185,8 +184,8 @@
         <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="simple-pendulum-tutorial">
-<h1>Simple Pendulum Tutorial<a class="headerlink" href="#simple-pendulum-tutorial" title="Permalink to this headline">¶</a></h1>
+        <div class="section" id="simple-pendulum">
+<h1>Simple Pendulum<a class="headerlink" href="#simple-pendulum" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>This is a tutorial for creating a simple pendulum with a point mass attached to a rigid, mass-less beam, which has a
@@ -233,8 +232,8 @@ the kinematics. The joints interface is more convenient for many applications, a
 building block components into common mechanical joints, and doesn’t require individually defining all of the symbols,
 reference frames, vectors, and points in the model. If you are interested in using the joints interface, you may skip
 steps (3a) through (7a) below, and proceed to step (3b).</p>
-<hr/><div class="section" id="create-symbols">
-<h3>Create Symbols<a class="headerlink" href="#create-symbols" title="Permalink to this headline">¶</a></h3>
+<hr/><div class="section" id="symbols">
+<h3>Symbols<a class="headerlink" href="#symbols" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="../_images/02a-1.jpg"><img alt="Diagram view, prior to creating symbols" src="../_images/02a-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/02a-2.jpg"><img alt="Edit menu" src="../_images/02a-2.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/02a-3.jpg"><img alt="New parameter" src="../_images/02a-3.jpg" style="width: 108px;"/></a>
@@ -309,7 +308,12 @@ the three horizontal lines, at which point you should see the diagram updated to
 </div>
 <div class="section" id="joints-interface">
 <h2>Joints Interface<a class="headerlink" href="#joints-interface" title="Permalink to this headline">¶</a></h2>
-<p>Tap on the welcome tab on the bottom of the screen, then the import button, and select the saved user.Pendulum file,
+<div class="section" id="angular-degree-of-freedom">
+<h3>Angular Degree of Freedom<a class="headerlink" href="#angular-degree-of-freedom" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/02b-1.jpg"><img alt="Joints menu" src="../_images/02b-1.jpg" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/02b-2.png"><img alt="New revolute" src="../_images/02b-2.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/02b-3.png"><img alt="Created revolute joint in the diagram view" src="../_images/02b-3.png" style="width: 108px;"/></a>
+<p>Tap on the welcome tab on the bottom of the screen, then the import button, and select the saved <cite>user.Pendulum</cite> file,
 which will return the model to its state after step (1). Open the edit menu, and expand the joints panel, then tap the
 plus sign to the left of revolute. Add the following specifications, leaving line items that are unlisted at their
 default value,</p>
@@ -323,8 +327,14 @@ default value,</p>
 </dl>
 <p>and then tap the green check button to create the joint. This will create a new frame rotated about the out-of-plane
 <strong>k</strong> axis by an angle θ<sub>E</sub> , similar to the output of step (5a). Notably, the creation of the generalized
-coordinate is combined with the generation of a reference frame in a single joint object. Next, tap the plus sign to
-the left of rigid translation, and add the following specifications</p>
+coordinate is combined with the generation of a reference frame in a single joint object.</p>
+<hr/></div>
+<div class="section" id="rigid-massless-beam">
+<h3>Rigid, Massless Beam<a class="headerlink" href="#rigid-massless-beam" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/03b-1.jpg"><img alt="Joints menu" src="../_images/03b-1.jpg" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/03b-2.png"><img alt="New rigid translation" src="../_images/03b-2.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/03b-3.png"><img alt="Created rigid translation in the diagram view" src="../_images/03b-3.png" style="width: 108px;"/></a>
+<p>Next, tap the plus sign to the left of rigid translation, and add the following specifications</p>
 <dl class="simple">
 <dt><strong>(3b) New Rigid Translation</strong></dt><dd><ul class="simple">
 <li><p><em>ref_frame_key</em>: E</p></li>
@@ -335,11 +345,14 @@ the left of rigid translation, and add the following specifications</p>
 <p>once again tapping the green check button to create the joint. This will create a new vector ra aligned with the
 <strong>e</strong><sub>x</sub>axis with length 1, and a new point <em>a</em>, similar to the output of step (7a). Thus, in this example,
 the same kinematics definition requiring 5 steps using the classic interface, is completed using two joints.</p>
+<hr/></div>
 </div>
 <div class="section" id="bodies">
 <h2>Bodies<a class="headerlink" href="#bodies" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-mass-symbol">
-<h3>Create Mass Symbol<a class="headerlink" href="#create-mass-symbol" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="mass-symbol">
+<h3>Mass Symbol<a class="headerlink" href="#mass-symbol" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/07-1.jpg"><img alt="Classic menu" src="../_images/07-1.jpg" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/07-2.png"><img alt="New parameter" src="../_images/07-2.png" style="width: 108px;"/></a>
 <p>Reopen the edit menu, expand the classic panel, and create a constant for pendulum mass with the following
 specifications</p>
 <dl class="simple">
@@ -350,9 +363,12 @@ specifications</p>
 </ul>
 </dd>
 </dl>
-</div>
-<div class="section" id="create-point-mass">
-<h3>Create Point Mass<a class="headerlink" href="#create-point-mass" title="Permalink to this headline">¶</a></h3>
+<hr/></div>
+<div class="section" id="point-mass">
+<h3>Point Mass<a class="headerlink" href="#point-mass" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/08-1.jpg"><img alt="Bodies menu" src="../_images/08-1.jpg" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/08-2.png"><img alt="New particle" src="../_images/08-2.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/08-3.png"><img alt="Created particle in the diagram view" src="../_images/08-3.png" style="width: 108px;"/></a>
 <p>Expand the bodies panel. Tap on the plus sign to the left of particle, and enter the following.</p>
 <dl class="simple">
 <dt><strong>(8) New Particle</strong></dt><dd><ul class="simple">
@@ -363,7 +379,7 @@ specifications</p>
 </dd>
 </dl>
 <p>which will create the pendulum bob with mass m attached to the point a, as shown below.</p>
-</div>
+<hr/></div>
 </div>
 <div class="section" id="analysis">
 <h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h2>
@@ -374,7 +390,7 @@ very simple model, the derivation run nearly instantaneously. Once complete, the
 play button. Tap again to run the simulation, once again this will be nearly instantaneous. Tap again to play the
 animation, which will show the pendulum swinging from right to left with around a 3 second period, as seen previously
 at the top of this page.</p>
-</div>
+<hr/></div>
 <div class="section" id="model-export">
 <h3>Model Export<a class="headerlink" href="#model-export" title="Permalink to this headline">¶</a></h3>
 <p>Open the edit menu by tapping the three horizontal lines in the upper left corner, and then tap on the export button.
@@ -383,13 +399,19 @@ lower right to export the files. The Model file (momdyn_model.py) is the format 
 Simulation file (simulation.csv) are the time-series reflecting the generalized coordinates and speeds that are
 animated. The Python file (py_model.py) contains code that can be executed and further manipulated on a desktop Python
 environment.</p>
-</div>
+<hr/></div>
 <div class="section" id="report">
 <h3>Report<a class="headerlink" href="#report" title="Permalink to this headline">¶</a></h3>
 <p>Tap on the report tab in the lower right to open up the report view showing text, equations and plots. The buttons at
 the top specify which section of the report to view. From left to right these are symbols, frames, points, bodies,
 loads, equations, and plots. The images below show these sections for the Pendulum model, omitting loads as there are
 none (except for gravity).</p>
+<a class="reference internal image-reference" href="../_images/report-symbols.png"><img alt="Symbols in the report view" src="../_images/report-symbols.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/report-frames.png"><img alt="Frames in the report view" src="../_images/report-frames.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/report-points.png"><img alt="Points in the report view" src="../_images/report-points.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/report-bodies.png"><img alt="Bodies in the report view" src="../_images/report-bodies.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/report-equations.png"><img alt="Equations in the report view" src="../_images/report-equations.png" style="width: 108px;"/></a>
+<a class="reference internal image-reference" href="../_images/report-plots.png"><img alt="Plots in the report view" src="../_images/report-plots.png" style="width: 108px;"/></a>
 </div>
 </div>
 </div>
@@ -407,14 +429,14 @@ none (except for gravity).</p>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../save.html">
+          <a class="prev-page" href="../tutorials.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Save and Import/Export</div>
+                <div class="title">Tutorials</div>
                 
               </div>
             </a>
@@ -448,20 +470,24 @@ none (except for gravity).</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Simple Pendulum Tutorial</a><ul>
+<li><a class="reference internal" href="#">Simple Pendulum</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a><ul>
 <li><a class="reference internal" href="#create-the-new-model">Create the New Model</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#classic-interface">Classic Interface</a><ul>
-<li><a class="reference internal" href="#create-symbols">Create Symbols</a></li>
+<li><a class="reference internal" href="#symbols">Symbols</a></li>
 <li><a class="reference internal" href="#kinematics">Kinematics</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#joints-interface">Joints Interface</a></li>
+<li><a class="reference internal" href="#joints-interface">Joints Interface</a><ul>
+<li><a class="reference internal" href="#angular-degree-of-freedom">Angular Degree of Freedom</a></li>
+<li><a class="reference internal" href="#rigid-massless-beam">Rigid, Massless Beam</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#bodies">Bodies</a><ul>
-<li><a class="reference internal" href="#create-mass-symbol">Create Mass Symbol</a></li>
-<li><a class="reference internal" href="#create-point-mass">Create Point Mass</a></li>
+<li><a class="reference internal" href="#mass-symbol">Mass Symbol</a></li>
+<li><a class="reference internal" href="#point-mass">Point Mass</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#analysis">Analysis</a><ul>
