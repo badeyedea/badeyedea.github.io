@@ -26,9 +26,7 @@ point is created using these parameters. The latter is closer to the approach us
 software, where lower-level modeling attributes are consolidated into the joint object, reducing the total number of
 steps.
 
-.. raw:: html
-
-   <hr>
+.. _create-new:
 
 Create the New Model
 --------------------
@@ -50,7 +48,7 @@ To begin, from the welcome screen tap the "Create" button, which will bring up a
 specifications give a model name and description, and creates gravitational force, time, and tolerance. Enter the
 following:
 
-**(1) Create - Specify Settings**
+**Create - Specify Settings**
   - *model_name*: Pendulum
   - *model_description*: A simple pendulum with a point mass and single angular degree of freedom
   - *gravity_method*: Uniform
@@ -72,15 +70,14 @@ Classic Interface
 Here we will use the classic interface, which allows for more direct control over the fundamental building blocks of
 the kinematics. The joints interface is more convenient for many applications, as it consolidates functionality of the
 building block components into common mechanical joints, and doesn't require individually defining all of the symbols,
-reference frames, vectors, and points in the model. If you are interested in using the joints interface, you may skip
-steps (3a) through (7a) below, and proceed to step (3b).
-
-.. raw:: html
-
-   <hr>
+reference frames, vectors, and points in the model. If you are interested in using the joints interface, you may
+proceed to the :ref:`joints section <joints>`.
 
 Symbols
 -------
+
+Length
+++++++
 
 .. image:: pendulum/02a-1.jpg
    :width: 108
@@ -98,16 +95,15 @@ Tap the edit button (three horizontal bars) in the upper left to bring up the ed
 pendulum using the classic interface. Expand the classic panel, and tap the plus sign on the parameter line, which will
 bring up the new parameter dialog. Create a constant for pendulum length with the following specifications
 
-**(2a) New Parameter**
+**New Parameter**
   - *name*: l
   - *value*: 1
   - *description*: length
 
 then tap the green plus sign after entering the values for each parameter to create it.
 
-.. raw:: html
-
-   <hr>
+Angular Degree-of-Freedom
++++++++++++++++++++++++++
 
 .. image:: pendulum/03a-1.jpg
    :width: 108
@@ -120,19 +116,18 @@ then tap the green plus sign after entering the values for each parameter to cre
 Next create the generalized coordinate, *θ*, corresponding to the angular degree of freedom. With the classic panel
 open, tap the plus sign to the left of generalized coordinate, and enter the following specifications
 
-**(3a) New Generalized Coordinate**
+**New Generalized Coordinate**
   - *name*: \theta
   - *initial*: 1
   - *description*: angle
 
 noting that when \theta is entered as the name, it will be replaced by the unicode character θ.
 
-.. raw:: html
-
-   <hr>
-
 Kinematics
 ----------
+
+Orientation
++++++++++++
 
 .. image:: pendulum/04a-1.jpg
    :width: 108
@@ -149,15 +144,14 @@ Kinematics
 Once again, with the classic panel open, tap the plus sign to the left of frame, and enter the following (noting that
 line items that are not listed below can retain their default values)
 
-**(4a) New Frame**
+**New Frame**
   - *first_angle*: θ(t)
 
 tap the green check button to create the frame. This will create the new frame rotated by the angle *θ* measured about
 the out of plane axis **k**.
 
-.. raw:: html
-
-   <hr>
+Vector
+++++++
 
 .. image:: pendulum/05a-1.jpg
    :width: 108
@@ -173,7 +167,7 @@ the out of plane axis **k**.
 
 Next, tap the plus sign to the left of vector, and enter the following
 
-**(5a) New Vector**
+**New Vector**
   - *name*: r
   - *ref_frame_key*: E
   - *x*: l
@@ -181,9 +175,8 @@ Next, tap the plus sign to the left of vector, and enter the following
 and tap the green check button to create the vector named **r**, aligned with the **e**\ :sub:`x` \ axis of the rotated
 frame, with constant length *l*.
 
-.. raw:: html
-
-   <hr>
+Point
++++++
 
 .. image:: pendulum/06a-1.jpg
    :width: 108
@@ -199,7 +192,7 @@ frame, with constant length *l*.
 
 Finally, tap the plus sign to the left of point, and enter the following
 
-**(6a) New Point**
+**New Point**
   - vector_key: r
 
 and tap the green check button to create the point a at the end of the vector *r*. Minimize the edit menu by tapping
@@ -208,6 +201,8 @@ the three horizontal lines, at which point you should see the diagram updated to
 .. raw:: html
 
    <hr>
+
+.. _joints:
 
 Joints Interface
 ================
@@ -228,11 +223,11 @@ Angular Degree of Freedom
    :alt: Created revolute joint in the diagram view
 
 Tap on the welcome tab on the bottom of the screen, then the import button, and select the saved `user.Pendulum` file,
-which will return the model to its state after step (1). Open the edit menu, and expand the joints panel, then tap the
+which will return the model to its state after :ref:`creating the model <create-new>`. Open the edit menu, and expand the joints panel, then tap the
 plus sign to the left of revolute. Add the following specifications, leaving line items that are unlisted at their
 default value,
 
-**(2b) New Revolute**
+**New Revolute**
   - *name*: E
   - *z*: 1
   - *value*: 1
@@ -240,10 +235,6 @@ default value,
 and then tap the green check button to create the joint. This will create a new frame rotated about the out-of-plane
 **k** axis by an angle θ\ :sub:`E` \, similar to the output of step (5a). Notably, the creation of the generalized
 coordinate is combined with the generation of a reference frame in a single joint object.
-
-.. raw:: html
-
-   <hr>
 
 Rigid, Massless Beam
 --------------------
@@ -262,7 +253,7 @@ Rigid, Massless Beam
 
 Next, tap the plus sign to the left of rigid translation, and add the following specifications
 
-**(3b) New Rigid Translation**
+**New Rigid Translation**
   - *ref_frame_key*: E
   - *x*: 1
 
@@ -291,7 +282,7 @@ Mass Symbol
 Reopen the edit menu, expand the classic panel, and create a constant for pendulum mass with the following
 specifications
 
-**(7) New Parameter**
+**New Parameter**
   - *name*: m
   - *value*: 1
   - *description*: mass
@@ -317,7 +308,7 @@ Point Mass
 
 Expand the bodies panel. Tap on the plus sign to the left of particle, and enter the following.
 
-**(8) New Particle**
+**New Particle**
   - *name*: bob
   - *ref_point_key*: a
   - *mass*: m
@@ -339,10 +330,6 @@ very simple model, the derivation run nearly instantaneously. Once complete, the
 play button. Tap again to run the simulation, once again this will be nearly instantaneous. Tap again to play the
 animation, which will show the pendulum swinging from right to left with around a 3 second period, as seen previously
 at the top of this page.
-
-.. raw:: html
-
-   <hr>
 
 Model Export
 ------------
@@ -369,10 +356,6 @@ environment.
 .. image:: pendulum/export-states.png
    :height: 196
    :alt: Plotted states
-
-.. raw:: html
-
-   <hr>
 
 Report
 ------

@@ -200,8 +200,8 @@ a pencil-and-paper approach, each symbolic parameter is individually named by th
 point is created using these parameters. The latter is closer to the approach used in modern mulitibody dynamics
 software, where lower-level modeling attributes are consolidated into the joint object, reducing the total number of
 steps.</p>
-<hr/><div class="section" id="create-the-new-model">
-<h3>Create the New Model<a class="headerlink" href="#create-the-new-model" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="create-the-new-model">
+<span id="create-new"></span><h3>Create the New Model<a class="headerlink" href="#create-the-new-model" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="../_images/01-1.jpg"><img alt="Welcome screen" src="../_images/01-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/01-2.png"><img alt="Create screen" src="../_images/01-2.png" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/01-3.png"><img alt="Create screen, bottom" src="../_images/01-3.png" style="width: 108px;"/></a>
@@ -210,7 +210,7 @@ steps.</p>
 specifications give a model name and description, and creates gravitational force, time, and tolerance. Enter the
 following:</p>
 <dl class="simple">
-<dt><strong>(1) Create - Specify Settings</strong></dt><dd><ul class="simple">
+<dt><strong>Create - Specify Settings</strong></dt><dd><ul class="simple">
 <li><p><em>model_name</em>: Pendulum</p></li>
 <li><p><em>model_description</em>: A simple pendulum with a point mass and single angular degree of freedom</p></li>
 <li><p><em>gravity_method</em>: Uniform</p></li>
@@ -230,10 +230,12 @@ returning to this stage later in the tutorial.</p>
 <p>Here we will use the classic interface, which allows for more direct control over the fundamental building blocks of
 the kinematics. The joints interface is more convenient for many applications, as it consolidates functionality of the
 building block components into common mechanical joints, and doesn’t require individually defining all of the symbols,
-reference frames, vectors, and points in the model. If you are interested in using the joints interface, you may skip
-steps (3a) through (7a) below, and proceed to step (3b).</p>
-<hr/><div class="section" id="symbols">
+reference frames, vectors, and points in the model. If you are interested in using the joints interface, you may
+proceed to the <a class="reference internal" href="#joints"><span class="std std-ref">joints section</span></a>.</p>
+<div class="section" id="symbols">
 <h3>Symbols<a class="headerlink" href="#symbols" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="length">
+<h4>Length<a class="headerlink" href="#length" title="Permalink to this headline">¶</a></h4>
 <a class="reference internal image-reference" href="../_images/02a-1.jpg"><img alt="Diagram view, prior to creating symbols" src="../_images/02a-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/02a-2.jpg"><img alt="Edit menu" src="../_images/02a-2.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/02a-3.jpg"><img alt="New parameter" src="../_images/02a-3.jpg" style="width: 108px;"/></a>
@@ -241,7 +243,7 @@ steps (3a) through (7a) below, and proceed to step (3b).</p>
 pendulum using the classic interface. Expand the classic panel, and tap the plus sign on the parameter line, which will
 bring up the new parameter dialog. Create a constant for pendulum length with the following specifications</p>
 <dl class="simple">
-<dt><strong>(2a) New Parameter</strong></dt><dd><ul class="simple">
+<dt><strong>New Parameter</strong></dt><dd><ul class="simple">
 <li><p><em>name</em>: l</p></li>
 <li><p><em>value</em>: 1</p></li>
 <li><p><em>description</em>: length</p></li>
@@ -249,12 +251,15 @@ bring up the new parameter dialog. Create a constant for pendulum length with th
 </dd>
 </dl>
 <p>then tap the green plus sign after entering the values for each parameter to create it.</p>
-<hr/><a class="reference internal image-reference" href="../_images/03a-1.jpg"><img alt="Edit menu" src="../_images/03a-1.jpg" style="width: 108px;"/></a>
+</div>
+<div class="section" id="angular-degree-of-freedom">
+<h4>Angular Degree-of-Freedom<a class="headerlink" href="#angular-degree-of-freedom" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="../_images/03a-1.jpg"><img alt="Edit menu" src="../_images/03a-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/03a-2.jpg"><img alt="New generalized coordinate" src="../_images/03a-2.jpg" style="width: 108px;"/></a>
 <p>Next create the generalized coordinate, <em>θ</em>, corresponding to the angular degree of freedom. With the classic panel
 open, tap the plus sign to the left of generalized coordinate, and enter the following specifications</p>
 <dl class="simple">
-<dt><strong>(3a) New Generalized Coordinate</strong></dt><dd><ul class="simple">
+<dt><strong>New Generalized Coordinate</strong></dt><dd><ul class="simple">
 <li><p><em>name</em>: theta</p></li>
 <li><p><em>initial</em>: 1</p></li>
 <li><p><em>description</em>: angle</p></li>
@@ -262,28 +267,34 @@ open, tap the plus sign to the left of generalized coordinate, and enter the fol
 </dd>
 </dl>
 <p>noting that when theta is entered as the name, it will be replaced by the unicode character θ.</p>
-<hr/></div>
+</div>
+</div>
 <div class="section" id="kinematics">
 <h3>Kinematics<a class="headerlink" href="#kinematics" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="orientation">
+<h4>Orientation<a class="headerlink" href="#orientation" title="Permalink to this headline">¶</a></h4>
 <a class="reference internal image-reference" href="../_images/04a-1.jpg"><img alt="Edit menu" src="../_images/04a-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/04a-2.jpg"><img alt="New frame" src="../_images/04a-2.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/04a-3.jpg"><img alt="Created frame in the diagram view" src="../_images/04a-3.jpg" style="width: 108px;"/></a>
 <p>Once again, with the classic panel open, tap the plus sign to the left of frame, and enter the following (noting that
 line items that are not listed below can retain their default values)</p>
 <dl class="simple">
-<dt><strong>(4a) New Frame</strong></dt><dd><ul class="simple">
+<dt><strong>New Frame</strong></dt><dd><ul class="simple">
 <li><p><em>first_angle</em>: θ(t)</p></li>
 </ul>
 </dd>
 </dl>
 <p>tap the green check button to create the frame. This will create the new frame rotated by the angle <em>θ</em> measured about
 the out of plane axis <strong>k</strong>.</p>
-<hr/><a class="reference internal image-reference" href="../_images/05a-1.jpg"><img alt="Edit menu" src="../_images/05a-1.jpg" style="width: 108px;"/></a>
+</div>
+<div class="section" id="vector">
+<h4>Vector<a class="headerlink" href="#vector" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="../_images/05a-1.jpg"><img alt="Edit menu" src="../_images/05a-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/05a-2.png"><img alt="New vector" src="../_images/05a-2.png" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/05a-3.png"><img alt="Created vector in the diagram view" src="../_images/05a-3.png" style="width: 108px;"/></a>
 <p>Next, tap the plus sign to the left of vector, and enter the following</p>
 <dl class="simple">
-<dt><strong>(5a) New Vector</strong></dt><dd><ul class="simple">
+<dt><strong>New Vector</strong></dt><dd><ul class="simple">
 <li><p><em>name</em>: r</p></li>
 <li><p><em>ref_frame_key</em>: E</p></li>
 <li><p><em>x</em>: l</p></li>
@@ -292,12 +303,15 @@ the out of plane axis <strong>k</strong>.</p>
 </dl>
 <p>and tap the green check button to create the vector named <strong>r</strong>, aligned with the <strong>e</strong><sub>x</sub> axis of the rotated
 frame, with constant length <em>l</em>.</p>
-<hr/><a class="reference internal image-reference" href="../_images/06a-1.jpg"><img alt="Edit menu" src="../_images/06a-1.jpg" style="width: 108px;"/></a>
+</div>
+<div class="section" id="point">
+<h4>Point<a class="headerlink" href="#point" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="../_images/06a-1.jpg"><img alt="Edit menu" src="../_images/06a-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/06a-2.png"><img alt="New point" src="../_images/06a-2.png" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/06a-3.png"><img alt="Created point in the diagram view" src="../_images/06a-3.png" style="width: 108px;"/></a>
 <p>Finally, tap the plus sign to the left of point, and enter the following</p>
 <dl class="simple">
-<dt><strong>(6a) New Point</strong></dt><dd><ul class="simple">
+<dt><strong>New Point</strong></dt><dd><ul class="simple">
 <li><p>vector_key: r</p></li>
 </ul>
 </dd>
@@ -306,19 +320,20 @@ frame, with constant length <em>l</em>.</p>
 the three horizontal lines, at which point you should see the diagram updated to include the frame, vector, and point.</p>
 <hr/></div>
 </div>
+</div>
 <div class="section" id="joints-interface">
-<h2>Joints Interface<a class="headerlink" href="#joints-interface" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="angular-degree-of-freedom">
-<h3>Angular Degree of Freedom<a class="headerlink" href="#angular-degree-of-freedom" title="Permalink to this headline">¶</a></h3>
+<span id="joints"></span><h2>Joints Interface<a class="headerlink" href="#joints-interface" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Angular Degree of Freedom<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="../_images/02b-1.jpg"><img alt="Joints menu" src="../_images/02b-1.jpg" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/02b-2.png"><img alt="New revolute" src="../_images/02b-2.png" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/02b-3.png"><img alt="Created revolute joint in the diagram view" src="../_images/02b-3.png" style="width: 108px;"/></a>
 <p>Tap on the welcome tab on the bottom of the screen, then the import button, and select the saved <cite>user.Pendulum</cite> file,
-which will return the model to its state after step (1). Open the edit menu, and expand the joints panel, then tap the
+which will return the model to its state after <a class="reference internal" href="#create-new"><span class="std std-ref">creating the model</span></a>. Open the edit menu, and expand the joints panel, then tap the
 plus sign to the left of revolute. Add the following specifications, leaving line items that are unlisted at their
 default value,</p>
 <dl class="simple">
-<dt><strong>(2b) New Revolute</strong></dt><dd><ul class="simple">
+<dt><strong>New Revolute</strong></dt><dd><ul class="simple">
 <li><p><em>name</em>: E</p></li>
 <li><p><em>z</em>: 1</p></li>
 <li><p><em>value</em>: 1</p></li>
@@ -328,7 +343,7 @@ default value,</p>
 <p>and then tap the green check button to create the joint. This will create a new frame rotated about the out-of-plane
 <strong>k</strong> axis by an angle θ<sub>E</sub> , similar to the output of step (5a). Notably, the creation of the generalized
 coordinate is combined with the generation of a reference frame in a single joint object.</p>
-<hr/></div>
+</div>
 <div class="section" id="rigid-massless-beam">
 <h3>Rigid, Massless Beam<a class="headerlink" href="#rigid-massless-beam" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="../_images/03b-1.jpg"><img alt="Joints menu" src="../_images/03b-1.jpg" style="width: 108px;"/></a>
@@ -336,7 +351,7 @@ coordinate is combined with the generation of a reference frame in a single join
 <a class="reference internal image-reference" href="../_images/03b-3.png"><img alt="Created rigid translation in the diagram view" src="../_images/03b-3.png" style="width: 108px;"/></a>
 <p>Next, tap the plus sign to the left of rigid translation, and add the following specifications</p>
 <dl class="simple">
-<dt><strong>(3b) New Rigid Translation</strong></dt><dd><ul class="simple">
+<dt><strong>New Rigid Translation</strong></dt><dd><ul class="simple">
 <li><p><em>ref_frame_key</em>: E</p></li>
 <li><p><em>x</em>: 1</p></li>
 </ul>
@@ -356,7 +371,7 @@ the same kinematics definition requiring 5 steps using the classic interface, is
 <p>Reopen the edit menu, expand the classic panel, and create a constant for pendulum mass with the following
 specifications</p>
 <dl class="simple">
-<dt><strong>(7) New Parameter</strong></dt><dd><ul class="simple">
+<dt><strong>New Parameter</strong></dt><dd><ul class="simple">
 <li><p><em>name</em>: m</p></li>
 <li><p><em>value</em>: 1</p></li>
 <li><p><em>description</em>: mass</p></li>
@@ -371,7 +386,7 @@ specifications</p>
 <a class="reference internal image-reference" href="../_images/08-3.png"><img alt="Created particle in the diagram view" src="../_images/08-3.png" style="width: 108px;"/></a>
 <p>Expand the bodies panel. Tap on the plus sign to the left of particle, and enter the following.</p>
 <dl class="simple">
-<dt><strong>(8) New Particle</strong></dt><dd><ul class="simple">
+<dt><strong>New Particle</strong></dt><dd><ul class="simple">
 <li><p><em>name</em>: bob</p></li>
 <li><p><em>ref_point_key</em>: a</p></li>
 <li><p><em>mass</em>: m</p></li>
@@ -390,7 +405,7 @@ very simple model, the derivation run nearly instantaneously. Once complete, the
 play button. Tap again to run the simulation, once again this will be nearly instantaneous. Tap again to play the
 animation, which will show the pendulum swinging from right to left with around a 3 second period, as seen previously
 at the top of this page.</p>
-<hr/></div>
+</div>
 <div class="section" id="model-export">
 <h3>Model Export<a class="headerlink" href="#model-export" title="Permalink to this headline">¶</a></h3>
 <p>Open the edit menu by tapping the three horizontal lines in the upper left corner, and then tap on the export button.
@@ -403,7 +418,7 @@ environment.</p>
 <a class="reference internal image-reference" href="../_images/export-2.png"><img alt="Select to export model, simulation, and python" src="../_images/export-2.png" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/export-3.png"><img alt="Exported Python code, shown in the Pyto app" src="../_images/export-3.png" style="width: 108px;"/></a>
 <a class="reference internal image-reference" href="../_images/export-states.png"><img alt="Plotted states" src="../_images/export-states.png" style="height: 196px;"/></a>
-<hr/></div>
+</div>
 <div class="section" id="report">
 <h3>Report<a class="headerlink" href="#report" title="Permalink to this headline">¶</a></h3>
 <p>Tap on the report tab in the lower right to open up the report view showing text, equations and plots. The buttons at
@@ -480,12 +495,21 @@ none (except for gravity).</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#classic-interface">Classic Interface</a><ul>
-<li><a class="reference internal" href="#symbols">Symbols</a></li>
-<li><a class="reference internal" href="#kinematics">Kinematics</a></li>
+<li><a class="reference internal" href="#symbols">Symbols</a><ul>
+<li><a class="reference internal" href="#length">Length</a></li>
+<li><a class="reference internal" href="#angular-degree-of-freedom">Angular Degree-of-Freedom</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kinematics">Kinematics</a><ul>
+<li><a class="reference internal" href="#orientation">Orientation</a></li>
+<li><a class="reference internal" href="#vector">Vector</a></li>
+<li><a class="reference internal" href="#point">Point</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#joints-interface">Joints Interface</a><ul>
-<li><a class="reference internal" href="#angular-degree-of-freedom">Angular Degree of Freedom</a></li>
+<li><a class="reference internal" href="#id1">Angular Degree of Freedom</a></li>
 <li><a class="reference internal" href="#rigid-massless-beam">Rigid, Massless Beam</a></li>
 </ul>
 </li>
