@@ -289,6 +289,14 @@ Simulation file (simulation.csv) are the time-series reflecting the generalized 
 animated. The Python file (py_model.py) contains code that can be executed and further manipulated on a desktop Python
 environment.
 
+.. image:: pendulum/export-states.png
+   :height: 196
+   :alt: Plotted states
+
+.. raw:: html
+
+   <hr>
+
 Report
 ------
 
@@ -296,3 +304,27 @@ Tap on the report tab in the lower right to open up the report view showing text
 the top specify which section of the report to view. From left to right these are symbols, frames, points, bodies,
 loads, equations, and plots. The images below show these sections for the Oscillator model, omitting frames as there
 are none (except for the inertial frame).
+
+.. image:: oscillator/report-symbols.png
+   :width: 108
+   :alt: Symbols in the report view
+
+.. image:: oscillator/report-points.png
+   :width: 108
+   :alt: Points in the report view
+
+.. image:: oscillator/report-bodies.png
+   :width: 108
+   :alt: Bodies in the report view
+
+.. image:: oscillator/report-loads.png
+   :width: 108
+   :alt: Loads in the report view
+
+.. image:: oscillator/report-equations.png
+   :width: 108
+   :alt: Equations in the report view
+
+.. image:: oscillator/report-plots.png
+   :width: 108
+   :alt: Plots in the report view
