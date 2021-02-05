@@ -287,10 +287,6 @@ specifications
   - *value*: 1
   - *description*: mass
 
-.. raw:: html
-
-   <hr>
-
 Point Mass
 ----------
 
