@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Particle" href="bodies/particle.html" /><link rel="prev" title="Free Motion" href="joints/free_motion.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Loads" href="loads.html" /><link rel="prev" title="Joints" href="joints.html" />
 
     <meta name="generator" content="sphinx-3.3.1, furo 2020.12.30.beta24"/>
         <title>Bodies - momdyn 1.4.2 documentation</title>
@@ -112,51 +112,13 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="mechanism.html">Mechanism Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="classic/parameter.html">Parameter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="classic/generalized_coordinate.html">Generalized Coordinate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="classic/generalized_speed.html">Generalized Speed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="classic/frame.html">Frame</a></li>
-<li class="toctree-l3"><a class="reference internal" href="classic/vector.html">Vector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="classic/point.html">Point</a></li>
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Getting Started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/pendulum.html">Simple Pendulum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/oscillator.html">Mass-Spring-Damper</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="joints/rigid_translation.html">Rigid Translation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/rigid_rotation.html">Rigid Rotation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/prismatic.html">Prismatic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/revolute.html">Revolute</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/cylindrical.html">Cylindrical</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/universal.html">Universal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/spherical.html">Spherical</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/planar.html">Planar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="joints/free_motion.html">Free Motion</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">Bodies</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="bodies/particle.html">Particle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bodies/general_rigid_body.html">General Rigid Body</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_box.html">Rigid Body Box</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_cone.html">Rigid Body Cone</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="loads/external_force.html">External Force</a></li>
-<li class="toctree-l3"><a class="reference internal" href="loads/actuated_force.html">Actuated Force</a></li>
-<li class="toctree-l3"><a class="reference internal" href="loads/external_moment.html">External Moment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="loads/actuated_moment.html">Actuated Moment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="loads/translational_spring.html">Translational Spring</a></li>
-<li class="toctree-l3"><a class="reference internal" href="loads/rotational_spring.html">Rotational Spring</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Getting Started</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
 <li class="toctree-l2"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
@@ -165,10 +127,23 @@
 <li class="toctree-l2"><a class="reference internal" href="save.html">Save and Import/Export</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="create_dialog.html">Create Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="create_dialog.html#settings-dialog">Settings Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="import_dialog.html">Import Dialog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="on_screen_controls.html">On-Screen Controls</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="mechanism.html">Mechanism Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="classic.html">Classic</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="joints.html">Joints</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">Bodies</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="loads.html">Loads</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -187,14 +162,6 @@
 <h1>Bodies<a class="headerlink" href="#bodies" title="Permalink to this headline">¶</a></h1>
 <p>Bodies are used to define the mass and inertial properties of the model. The most basic body is a Particle, which is a mass that is attached to a Point, without an inertia tensor. Basic RigidBody objects are defined, which also have mass defined at the body’s mass-center, and inertia tensors dependent on the body geometry.</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Body Types:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="bodies/particle.html">Particle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bodies/general_rigid_body.html">General Rigid Body</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_box.html">Rigid Body Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_cone.html">Rigid Body Cone</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bodies/rigid_body_cylinder.html">Rigid Body Cylinder</a></li>
-</ul>
 </div>
 <hr/><p><a class="reference external" href="bodies/particle.html">Particle</a></p>
 <a class="reference internal image-reference" href="_images/particle.jpg"><img alt="Depiction of a particle" src="_images/particle.jpg" style="width: 128px;"/></a>
@@ -217,23 +184,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="bodies/particle.html">
+          <a class="next-page" href="loads.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Particle</div>
+                <div class="title">Loads</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="joints/free_motion.html">
+          <a class="prev-page" href="joints.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Free Motion</div>
+                <div class="title">Joints</div>
                 
               </div>
             </a>

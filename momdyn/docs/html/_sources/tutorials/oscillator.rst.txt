@@ -289,7 +289,7 @@ Simulation file (simulation.csv) are the time-series reflecting the generalized 
 animated. The Python file (py_model.py) contains code that can be executed and further manipulated on a desktop Python
 environment.
 
-.. image:: pendulum/export-states.png
+.. image:: oscillator/export-states.png
    :height: 196
    :alt: Plotted states
 
